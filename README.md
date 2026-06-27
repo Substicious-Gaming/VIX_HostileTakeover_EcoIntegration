@@ -1,3 +1,5 @@
+![License:](https://img.shields.io/badge/License%3A-GPL%20v3-green?style=for-the-badge)
+
 ![screenshot](Thumb.png)
 
 # Volsung Industries: Hostile Takeover - Economy Integration
