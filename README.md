@@ -1,4 +1,4 @@
-![Volsung Industries: Hostile Takeover - Economy Integration Workshop Thumbnail](http://url/to/img.png](https://github.com/Substicious-Gaming/VIX_HostileTakeover_EcoIntegration/blob/main/Thumb.png)
+![Volsung Industries: Hostile Takeover - Economy Integration Workshop Thumbnail](http://url/to/img.png](https://github.com/Substicious-Gaming/VIX_HostileTakeover_EcoIntegration/blob/main/Thumb.png?raw=true)
 
 # Volsung Industries: Hostile Takeover - Economy Integration
 
