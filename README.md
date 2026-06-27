@@ -1,4 +1,4 @@
-[![Unlicense License][license-shield]][license-url]
+![license](https://img.shields.io/badge/license-GLP-3.0-brightgreen?style=flat-square)
 
 ![screenshot](Thumb.png)
 
