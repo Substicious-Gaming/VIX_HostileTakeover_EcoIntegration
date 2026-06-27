@@ -1,3 +1,5 @@
+[![Unlicense License][license-shield]][license-url]
+
 ![screenshot](Thumb.png)
 
 # Volsung Industries: Hostile Takeover - Economy Integration
