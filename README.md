@@ -1,4 +1,4 @@
-![license](https://img.shields.io/badge/license-GLP-3.0-brightgreen?style=flat-square)
+![License:](https://img.shields.io/badge/License%3A-GPL%20v3-green?style=for-the-badge)
 
 ![screenshot](Thumb.png)
 
