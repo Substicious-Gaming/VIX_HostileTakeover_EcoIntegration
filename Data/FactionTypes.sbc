@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Example
+
+    This file defines properties for a dynamically generated factions.
+
+    Any faction types in this file also need corresponding definitions in the following files to avoid errors:
+        - FactionNames.sbc
+        - FactionIconTextures.sbc
+
+    <Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="FactionSubtype" /> The subtype of the faction. Used in Factions.sbc
+
+        <FactionRatio>4</FactionRatio>   Ratio of how many factions of this type shsould be generated. Split to 15 by default.
+        <Station_Rule_Min_Outpost>2</Station_Rule_Min_Outpost>   Minimum number of planetary trade stations
+        <Station_Rule_Max_Outpost>4</Station_Rule_Max_Outpost>   Maximum number of planetary trade stations
+        <Station_Rule_Min_Orbit>1</Station_Rule_Min_Orbit>   Minimum number of orbital trade stations
+        <Station_Rule_Max_Orbit>2</Station_Rule_Max_Orbit>   Maximum number of orbital trade stations
+        <Station_Rule_Min_Station>1</Station_Rule_Min_Station>   Minimum number of space trade stations
+        <Station_Rule_Max_Station>2</Station_Rule_Max_Station>   Maximum number of space trade stations
+        <PreferDeep>true</PreferDeep>   Spawn deep space stations
+        
+        <Relations>
+            <Relation Faction="Miner" Variant="HostileMin" />   Example: Hostile relations with factions of this type
+            <Relation Faction="Trader" Variant="HostileMin_NeutralMid" />   Example: Hostile to Neutral relations with factions of this type
+            <Relation Faction="Builder" Variant="FriendlyMax_HostileMid" />   Example: Neutral to Friendly relations with factions of this type
+            <Relation Faction="Military" Variant="Zero" />   Example: Neutral relations with factions of this type
+        </Relations>
+        <FriendsWith>   Become friends with the closest proximity of these spawned faction types.
+            <Faction>Trader</Faction>   List of any factions applicable
+        </FriendsWith>
+        
+        <TypeDescription>EconomyFaction_Description_Miner</TypeDescription>   Localization tag for faction description
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>   How many variations are there? TypeDescription, TypeDescription0, TypeDescription1 etc. See localization file.
+        
+        <OffersList>   Items available to buy at their stations stores
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Iron" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Nickel" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Cobalt" />
+        </OffersList>
+
+        <OrdersList>   Items their stations are willing to buy
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+        </OrdersList>
+        
+        <GridsForSale>  prefabs/ships Available to buy at station stores.
+            <PrefabName>Eco_Ship_TIonFade</PrefabName>
+            <PrefabName>Eco_Ship_MiniMerchant</PrefabName>
+            <PrefabName>Eco_Ship_JClassCourier</PrefabName>
+            <PrefabName>Eco_Ship_B60BulkFreighter</PrefabName>
+            <PrefabName>Eco_Ship_AmbassadorExplorer</PrefabName>
+            <PrefabName>Eco_Ship_H2BullwarkHauler</PrefabName>
+            <PrefabName>Eco_Ship_CR2Shrike</PrefabName>
+            <PrefabName>Eco_Ship_LightSupplyCraft</PrefabName>
+            <PrefabName>Eco_Ship_BuddyMiner</PrefabName>
+            <PrefabName>Eco_Ship_WaylineSutler</PrefabName>
+            <PrefabName>Eco_Ship_HF3NarrowframeFreighter</PrefabName>
+            <PrefabName>Eco_Ship_RhinoMiner</PrefabName>
+            <PrefabName>Eco_Ship_RST6Salvador</PrefabName>
+            <PrefabName>Eco_Ship_RookGunship</PrefabName>
+            <PrefabName>Eco_Ship_H01Sapper</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk6</PrefabName>
+            <PrefabName>Eco_Ship_R3StartSkiff</PrefabName>
+            <PrefabName>Eco_Ship_H01Prospector</PrefabName>
+            <PrefabName>Eco_Ship_HullBreaker</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk2</PrefabName>
+            <PrefabName>Eco_Missile_LM3LateralMissile</PrefabName>
+            <PrefabName>Eco_Ship_CivicHauler</PrefabName>
+            <PrefabName>Eco_Ship_TurtleMiner</PrefabName>
+            <PrefabName>Eco_Ship_KiteMiner</PrefabName>
+            <PrefabName>Eco_Ship_H04Advanced</PrefabName>
+            <PrefabName>Eco_Ship_HeavyModuleFreighter</PrefabName>
+            <PrefabName>Eco_Ship_HorizonForge</PrefabName>
+            <PrefabName>Eco_Ship_LunarArk</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameC</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameJ</PrefabName>
+            <PrefabName>Eco_Ship_B980Hauler</PrefabName>
+            <PrefabName>Eco_Ship_WardenStrikeCraft</PrefabName>
+            <PrefabName>Eco_Ship_TwinRailDrone</PrefabName>
+            <PrefabName>Eco_Ship_Jackdaw</PrefabName>
+            <PrefabName>Eco_Ship_SnubShip</PrefabName>
+            <PrefabName>Eco_Ship_H1IndustrialCorvette</PrefabName>
+            <PrefabName>Eco_Rover_OR7Gravler</PrefabName>
+            
+            <PrefabName>Eco_Ship_Pirate_MiniMerchant</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_JClassCourier</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_CR2Shrike</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_RookGunship</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_HullBreaker</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_HaulFrameJ</PrefabName>
+        </GridsForSale>
+
+        <CanSellOxygen>true</CanSellOxygen>   When true trade stations can sell Oxygen
+        <CanSellHydrogen>true</CanSellHydrogen>   When true trade stations can sell Hydrogen	
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>   The minimum amount of oxygen/hydrogen for sale - this value is in KL
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>   The maximum amount of oxygen/hydrogen for sale - this value is in KL
+		<MinimumOxygenPrice>150</MinimumOxygenPrice>   The minimum price for oxygen
+		<MinimumHydrogenPrice>150</MinimumHydrogenPrice>   The minimum price for hydrogen
+
+        <MaxContractCount>15</MaxContractCount>   Maximum number of contract jobs available at their stations
+    </Definition>
+
+-->
+
+    <Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="Miner" />
+
+        <FactionRatio>4</FactionRatio>
+        <Station_Rule_Min_Outpost>2</Station_Rule_Min_Outpost>
+        <Station_Rule_Max_Outpost>4</Station_Rule_Max_Outpost>
+        <Station_Rule_Min_Orbit>1</Station_Rule_Min_Orbit>
+        <Station_Rule_Max_Orbit>2</Station_Rule_Max_Orbit>
+        <Station_Rule_Min_Station>1</Station_Rule_Min_Station>
+        <Station_Rule_Max_Station>2</Station_Rule_Max_Station>
+        <PreferDeep>false</PreferDeep>
+
+        <Relations>
+            <Relation Faction="Miner" Variant="HostileMin_NeutralMid" />
+            <Relation Faction="Trader" Variant="FriendlyMax_HostileMid" />
+            <Relation Faction="Builder" Variant="Zero" />
+            <Relation Faction="Military" Variant="Zero" />
+            <Relation Faction="Pirate" Variant="HostileMin_NeutralMid" />
+        </Relations>
+        <FriendsWith>
+            <Faction>Trader</Faction>
+        </FriendsWith>
+
+        <TypeDescription>EconomyFaction_Description_Miner</TypeDescription>
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>
+
+        <OffersList>
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Iron" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Nickel" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Cobalt" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Magnesium" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Silicon" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Silver" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Gold" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Platinum" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Uranium" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Ice" />
+            <ItemId Type="MyObjectBuilder_Datapad" Subtype="Datapad" />
+
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Iron" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Nickel" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Silicon" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Cobalt" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Magnesium" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Silver" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Gold" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Platinum" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Uranium" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="HandDrill3Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="HandDrill4Item" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Flatbread" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_FruitPastry" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Ramen" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Medkit" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="ClangCola" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="CosmicCoffee" />
+        </OffersList>
+
+        <OrdersList>
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Cobalt" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Magnesium" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Silver" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Gold" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Platinum" />
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Uranium" />
+
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+        </OrdersList>
+
+        <GridsForSale>
+            <PrefabName>Eco_Ship_LightSupplyCraft</PrefabName>
+            <PrefabName>Eco_Ship_BuddyMiner</PrefabName>
+            <PrefabName>Eco_Ship_RhinoMiner</PrefabName>
+            <PrefabName>Eco_Ship_H01Sapper</PrefabName>
+            <PrefabName>Eco_Ship_H01Prospector</PrefabName>
+            <PrefabName>Eco_Ship_TurtleMiner</PrefabName>
+            <PrefabName>Eco_Ship_KiteMiner</PrefabName>
+            <PrefabName>Eco_Ship_H04Advanced</PrefabName>
+            <PrefabName>Eco_Ship_B980Hauler</PrefabName>
+            <PrefabName>Eco_Rover_OR7Gravler</PrefabName>
+
+        </GridsForSale>
+
+        <CanSellOxygen>true</CanSellOxygen>
+        <CanSellHydrogen>true</CanSellHydrogen>
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>
+
+        <MaxContractCount>25</MaxContractCount>
+
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="Trader" />
+
+        <FactionRatio>3</FactionRatio>
+        <Station_Rule_Min_Orbit>1</Station_Rule_Min_Orbit>
+        <Station_Rule_Max_Orbit>2</Station_Rule_Max_Orbit>
+        <Station_Rule_Min_Outpost>1</Station_Rule_Min_Outpost>
+        <Station_Rule_Max_Outpost>3</Station_Rule_Max_Outpost>
+        <Station_Rule_Min_Deep>2</Station_Rule_Min_Deep>
+        <Station_Rule_Max_Deep>5</Station_Rule_Max_Deep>
+        <TypeDescription>EconomyFaction_Description_Trader</TypeDescription>
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>
+        <Relations>
+            <Relation Faction="Military" Variant="Zero" />
+            <Relation Faction="Trader" Variant="HostileMin_NeutralMid" />
+            <Relation Faction="Builder" Variant="FriendlyMax_HostileMid" />
+            <Relation Faction="Pirate" Variant="HostileMin_NeutralMid" />
+        </Relations>
+        <FriendsWith>
+            <Faction>Miner</Faction>
+            <Faction>Builder</Faction>
+        </FriendsWith>
+        <PreferDeep>false</PreferDeep>
+
+        <OffersList>
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AutomaticRifleItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="PreciseAutomaticRifleItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="RapidFireAutomaticRifleItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="UltimateAutomaticRifleItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="SemiAutoPistolItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="FullAutoPistolItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="ElitePistolItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="BasicHandHeldLauncherItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AdvancedHandHeldLauncherItem" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="WelderItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="Welder2Item" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinderItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder2Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder3Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder4Item" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="HandDrillItem" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="HandDrill2Item" />
+
+            <ItemId Type="MyObjectBuilder_OxygenContainerObject" Subtype="OxygenBottle" />
+            <ItemId Type="MyObjectBuilder_GasContainerObject" Subtype="HydrogenBottle" />
+
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="MetalGrid" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="InteriorPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Girder" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SmallTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Display" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="BulletproofGlass" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Superconductor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Reactor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Thrust" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="GravityGenerator" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="RadioCommunication" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Explosives" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SolarCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="PowerCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Canvas" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Medical" />
+            <ItemId Type="MyObjectBuilder_Datapad" Subtype="Datapad" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="ZoneChip" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="EngineerPlushie" />
+
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="NATO_25x184mm" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="Missile200mm" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="AutocannonClip" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="MediumCalibreAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeCalibreAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeRailgunAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="SmallRailgunAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="SemiAutoPistolMagazine" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="FullAutoPistolMagazine" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="ElitePistolMagazine" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="AutomaticRifleGun_Mag_20rd" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="RapidFireAutomaticRifleGun_Mag_50rd" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="PreciseAutomaticRifleGun_Mag_5rd" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="UltimateAutomaticRifleGun_Mag_30rd" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Medkit" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
+
+            <ItemId Type="MyObjectBuilder_SeedItem" Subtype="Fruit" />
+            <ItemId Type="MyObjectBuilder_SeedItem" Subtype="Grain" />
+            <ItemId Type="MyObjectBuilder_SeedItem" Subtype="Mushrooms" />
+            <ItemId Type="MyObjectBuilder_SeedItem" Subtype="Vegetables" />
+
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Ice" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MammalMeatRaw" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="InsectMeatRaw" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Flatbread" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_FruitPastry" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Ramen" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Spaghetti" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Burrito" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="ClangCola" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="CosmicCoffee" />
+        </OffersList>
+
+        <OrdersList>
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Cobalt" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Magnesium" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Silver" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Gold" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Platinum" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Uranium" />
+
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Superconductor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Reactor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Thrust" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="GravityGenerator" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="RadioCommunication" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SolarCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="PowerCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="EngineerPlushie" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="PrototechScrap" />
+        </OrdersList>
+
+        <GridsForSale>
+            <PrefabName>Eco_Ship_TIonFade</PrefabName>
+            <PrefabName>Eco_Ship_MiniMerchant</PrefabName>
+            <PrefabName>Eco_Ship_JClassCourier</PrefabName>
+            <PrefabName>Eco_Ship_AmbassadorExplorer</PrefabName>
+            <PrefabName>Eco_Ship_H2BullwarkHauler</PrefabName>
+            <PrefabName>Eco_Ship_CR2Shrike</PrefabName>
+            <PrefabName>Eco_Ship_LightSupplyCraft</PrefabName>
+            <PrefabName>Eco_Ship_WaylineSutler</PrefabName>
+            <PrefabName>Eco_Ship_R3StartSkiff</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk2</PrefabName>
+            <PrefabName>Eco_Ship_CivicHauler</PrefabName>
+            <PrefabName>Eco_Ship_LunarArk</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameJ</PrefabName>
+            <PrefabName>Eco_Ship_HeavyModuleFreighter</PrefabName>
+
+            <PrefabName>Prefab_Leviathan_VI-X</PrefabName>
+            <PrefabName>Prefab_Atlas_VI-X</PrefabName>
+            <PrefabName>Prefab_Berserker_VI-X</PrefabName>
+            <PrefabName>Prefab_FENRIR_VI-X</PrefabName>
+            <PrefabName>Prefab_Fenrir_Bite</PrefabName>
+            <PrefabName>Prefab_Valor_VI-X</PrefabName>
+            <PrefabName>Prefab_Valor_Scout_MKII</PrefabName>
+            <PrefabName>Prefab_Stratos_VI-X2</PrefabName>
+            <PrefabName>Prefab_Shadow_VI-X</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-A</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-D-S</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-S</PrefabName>
+            <PrefabName>Prefab_Pathfinder_VI-X</PrefabName>
+            <PrefabName>Prefab_Nexus_VI-AS</PrefabName>
+            <PrefabName>Prefab_Manta_VI-X</PrefabName>
+            <PrefabName>Prefab_Manta_VI-XL_MkII</PrefabName>
+            <PrefabName>Prefab_HAVOC_MKIII</PrefabName>
+            <PrefabName>Prefab_AV721_Vixen</PrefabName>
+            <PrefabName>Prefab_Aerion_VI-X</PrefabName>
+            <PrefabName>Prefab_Bastion_VI-X</PrefabName>
+        </GridsForSale>
+
+        <CanSellOxygen>true</CanSellOxygen>
+        <CanSellHydrogen>true</CanSellHydrogen>
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>
+
+        <MaxContractCount>25</MaxContractCount>
+
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="Builder" />
+
+        <FactionRatio>3</FactionRatio>
+        <Station_Rule_Min_Orbit>1</Station_Rule_Min_Orbit>
+        <Station_Rule_Max_Orbit>3</Station_Rule_Max_Orbit>
+        <Station_Rule_Min_Outpost>1</Station_Rule_Min_Outpost>
+        <Station_Rule_Max_Outpost>3</Station_Rule_Max_Outpost>
+        <Station_Rule_Min_Station>1</Station_Rule_Min_Station>
+        <Station_Rule_Max_Station>3</Station_Rule_Max_Station>
+
+        <TypeDescription>EconomyFaction_Description_Builder</TypeDescription>
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>
+
+        <Relations>
+            <Relation Faction="Builder" Variant="HostileMin_NeutralMid" />
+            <Relation Faction="Military" Variant="Zero" />
+            <Relation Faction="Pirate" Variant="HostileMin_NeutralMid" />
+        </Relations>
+        <FriendsWith>
+            <Faction>Trader</Faction>
+        </FriendsWith>
+
+        <PreferDeep>false</PreferDeep>
+
+        <OffersList>
+            <ItemId Type="MyObjectBuilder_Datapad" Subtype="Datapad" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="ZoneChip" /><PrefabName>EconomyGatlingTurret</PrefabName>
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="Welder3Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="Welder4Item" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Medkit" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
+
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Ice" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Flatbread" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_FruitPastry" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Ramen" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="ClangCola" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="CosmicCoffee" />
+        </OffersList>
+
+        <OrdersList>
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="MetalGrid" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="InteriorPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Girder" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SmallTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Display" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="BulletproofGlass" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Superconductor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Reactor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Thrust" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="GravityGenerator" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="RadioCommunication" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Explosives" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SolarCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="PowerCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Canvas" />
+        </OrdersList>
+
+        <GridsForSale>            
+            <PrefabName>Eco_Ship_TIonFade</PrefabName>
+            <PrefabName>Eco_Ship_MiniMerchant</PrefabName>
+            <PrefabName>Eco_Ship_JClassCourier</PrefabName>
+            <PrefabName>Eco_Ship_B60BulkFreighter</PrefabName>
+            <PrefabName>Eco_Ship_AmbassadorExplorer</PrefabName>
+            <PrefabName>Eco_Ship_H2BullwarkHauler</PrefabName>
+            <PrefabName>Eco_Ship_CR2Shrike</PrefabName>
+            <PrefabName>Eco_Ship_BuddyMiner</PrefabName>
+            <PrefabName>Eco_Ship_WaylineSutler</PrefabName>
+            <PrefabName>Eco_Ship_HF3NarrowframeFreighter</PrefabName>
+            <PrefabName>Eco_Ship_RhinoMiner</PrefabName>
+            <PrefabName>Eco_Ship_RST6Salvador</PrefabName>
+            <PrefabName>Eco_Ship_RookGunship</PrefabName>
+            <PrefabName>Eco_Ship_H01Sapper</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk6</PrefabName>
+            <PrefabName>Eco_Ship_R3StartSkiff</PrefabName>
+            <PrefabName>Eco_Ship_H01Prospector</PrefabName>
+            <PrefabName>Eco_Ship_HullBreaker</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk2</PrefabName>
+            <PrefabName>Eco_Ship_CivicHauler</PrefabName>
+            <PrefabName>Eco_Ship_TurtleMiner</PrefabName>
+            <PrefabName>Eco_Ship_KiteMiner</PrefabName>
+            <PrefabName>Eco_Ship_HeavyModuleFreighter</PrefabName>
+            <PrefabName>Eco_Ship_HorizonForge</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameC</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameJ</PrefabName>
+            <PrefabName>Eco_Ship_B980Hauler</PrefabName>
+            <PrefabName>Eco_Ship_WardenStrikeCraft</PrefabName>
+            <PrefabName>Eco_Ship_TwinRailDrone</PrefabName>
+            <PrefabName>Eco_Ship_Jackdaw</PrefabName>
+            <PrefabName>Eco_Ship_SnubShip</PrefabName>
+            <PrefabName>Eco_Rover_OR7Gravler</PrefabName>
+
+            <PrefabName>Prefab_Leviathan_VI-X</PrefabName>
+            <PrefabName>Prefab_Atlas_VI-X</PrefabName>
+            <PrefabName>Prefab_Berserker_VI-X</PrefabName>
+            <PrefabName>Prefab_FENRIR_VI-X</PrefabName>
+            <PrefabName>Prefab_Fenrir_Bite</PrefabName>
+            <PrefabName>Prefab_Valor_VI-X</PrefabName>
+            <PrefabName>Prefab_Valor_Scout_MKII</PrefabName>
+            <PrefabName>Prefab_Stratos_VI-X2</PrefabName>
+            <PrefabName>Prefab_Shadow_VI-X</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-A</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-D-S</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-S</PrefabName>
+            <PrefabName>Prefab_Pathfinder_VI-X</PrefabName>
+            <PrefabName>Prefab_Nexus_VI-AS</PrefabName>
+            <PrefabName>Prefab_Manta_VI-X</PrefabName>
+            <PrefabName>Prefab_Manta_VI-XL_MkII</PrefabName>
+            <PrefabName>Prefab_HAVOC_MKIII</PrefabName>
+            <PrefabName>Prefab_AV721_Vixen</PrefabName>
+            <PrefabName>Prefab_Aerion_VI-X</PrefabName>
+            <PrefabName>Prefab_Bastion_VI-X</PrefabName>
+        </GridsForSale>
+
+        <MaxContractCount>25</MaxContractCount>
+		
+        <CanSellHydrogen>true</CanSellHydrogen>
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>
+
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="Pirate" />
+
+        <FactionRatio>0</FactionRatio>
+        <Station_Rule_Min_Orbit>1</Station_Rule_Min_Orbit>
+        <Station_Rule_Max_Orbit>3</Station_Rule_Max_Orbit>
+        <Station_Rule_Min_Outpost>1</Station_Rule_Min_Outpost>
+        <Station_Rule_Max_Outpost>3</Station_Rule_Max_Outpost>
+        <Station_Rule_Min_Station>1</Station_Rule_Min_Station>
+        <Station_Rule_Max_Station>3</Station_Rule_Max_Station>
+        <TypeDescription>EconomyFaction_Description_Pirate</TypeDescription>
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>
+
+        <Relations>
+            <Relation Faction="Pirate" Variant="Zero" />
+            <Relation Faction="Military" Variant="HostileMin_NeutralMid" />
+        </Relations>
+
+        <PreferDeep>false</PreferDeep>
+
+        <OffersList>
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="AutocannonClip" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeCalibreAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="MediumCalibreAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeRailgunAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="SmallRailgunAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="NATO_25x184mm" />
+
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Explosives" />
+
+            <ItemId Type="MyObjectBuilder_Datapad" Subtype="Datapad" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="ZoneChip" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="FullAutoPistolItem" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="FullAutoPistolMagazine" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="RapidFireAutomaticRifleItem" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="RapidFireAutomaticRifleGun_Mag_50rd" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="BasicHandHeldLauncherItem" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="Missile200mm" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder3Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder4Item" />
+
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Ice" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MammalMeatRaw" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="InsectMeatRaw" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Ramen" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Spaghetti" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Burrito" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Medkit" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
+            
+        </OffersList>
+
+        <OrdersList>
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="MetalGrid" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="InteriorPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Girder" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SmallTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Display" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="BulletproofGlass" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Superconductor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Reactor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Thrust" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="GravityGenerator" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="RadioCommunication" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SolarCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="PowerCell" />
+
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Magnesium" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Uranium" />
+
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Gold" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Silver" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Platinum" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="PrototechScrap" />
+        </OrdersList>
+
+        <GridsForSale>
+            <PrefabName>Eco_Ship_Pirate_MiniMerchant</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_JClassCourier</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_CR2Shrike</PrefabName>
+            <PrefabName>Eco_Ship_LightSupplyCraft</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_RookGunship</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk6</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_HullBreaker</PrefabName>
+            <PrefabName>Eco_Missile_LM3LateralMissile</PrefabName>
+            <PrefabName>Eco_Ship_Pirate_HaulFrameJ</PrefabName>
+
+        </GridsForSale>
+
+        <CanSellOxygen>false</CanSellOxygen>
+        <CanSellHydrogen>true</CanSellHydrogen>
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>
+
+        <MaxContractCount>25</MaxContractCount>
+
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="Military" />
+
+        <FactionRatio>3</FactionRatio>
+        <Station_Rule_Min_Orbit>1</Station_Rule_Min_Orbit>
+        <Station_Rule_Max_Orbit>3</Station_Rule_Max_Orbit>
+        <Station_Rule_Min_Outpost>1</Station_Rule_Min_Outpost>
+        <Station_Rule_Max_Outpost>3</Station_Rule_Max_Outpost>
+        <Station_Rule_Min_Station>1</Station_Rule_Min_Station>
+        <Station_Rule_Max_Station>3</Station_Rule_Max_Station>
+        <TypeDescription>EconomyFaction_Description_Military</TypeDescription>
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>
+
+        <Relations>
+            <Relation Faction="Military" Variant="FriendlyMax_HostileMid" />
+        </Relations>
+
+        <PreferDeep>false</PreferDeep>
+
+        <OffersList>
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="AutocannonClip" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeCalibreAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="MediumCalibreAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeRailgunAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="SmallRailgunAmmo" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="NATO_25x184mm" />
+
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Explosives" />
+
+            <ItemId Type="MyObjectBuilder_Datapad" Subtype="Datapad" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="ZoneChip" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="ElitePistolItem" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="ElitePistolMagazine" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="PreciseAutomaticRifleItem" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="PreciseAutomaticRifleGun_Mag_5rd" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="BasicHandHeldLauncherItem" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="Missile200mm" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder3Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="AngleGrinder4Item" />
+
+            <ItemId Type="MyObjectBuilder_Ore" Subtype="Ice" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MammalMeatRaw" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="InsectMeatRaw" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Flatbread" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_FruitPastry" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Ramen" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Spaghetti" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Burrito" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Medkit" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
+        </OffersList>
+
+        <OrdersList>
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="MetalGrid" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="InteriorPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Girder" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SmallTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Display" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="BulletproofGlass" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Superconductor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Reactor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Thrust" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="GravityGenerator" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="RadioCommunication" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SolarCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="PowerCell" />
+
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Magnesium" />
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="Uranium" />
+
+            <ItemId Type="MyObjectBuilder_Ingot" Subtype="PrototechScrap" />
+        </OrdersList>
+        
+        <GridsForSale>
+            <PrefabName>Eco_Ship_TIonFade</PrefabName>
+            <PrefabName>Eco_Ship_H2BullwarkHauler</PrefabName>
+            <PrefabName>Eco_Ship_RookGunship</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk6</PrefabName>
+            <PrefabName>Eco_Missile_LM3LateralMissile</PrefabName>
+            <PrefabName>Eco_Ship_WardenStrikeCraft</PrefabName>
+            <PrefabName>Eco_Ship_TwinRailDrone</PrefabName>
+            <PrefabName>Eco_Ship_SnubShip</PrefabName>
+            <PrefabName>Eco_Ship_H1IndustrialCorvette</PrefabName>
+
+            <PrefabName>Prefab_Leviathan_VI-X</PrefabName>
+            <PrefabName>Prefab_Atlas_VI-X</PrefabName>
+            <PrefabName>Prefab_Berserker_VI-X</PrefabName>
+            <PrefabName>Prefab_FENRIR_VI-X</PrefabName>
+            <PrefabName>Prefab_Fenrir_Bite</PrefabName>
+            <PrefabName>Prefab_Valor_VI-X</PrefabName>
+            <PrefabName>Prefab_Valor_Scout_MKII</PrefabName>
+            <PrefabName>Prefab_Stratos_VI-X2</PrefabName>
+            <PrefabName>Prefab_Shadow_VI-X</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-A</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-D-S</PrefabName>
+            <PrefabName>Prefab_Pioneer_VI-S</PrefabName>
+            <PrefabName>Prefab_Pathfinder_VI-X</PrefabName>
+            <PrefabName>Prefab_Nexus_VI-AS</PrefabName>
+            <PrefabName>Prefab_Manta_VI-X</PrefabName>
+            <PrefabName>Prefab_Manta_VI-XL_MkII</PrefabName>
+            <PrefabName>Prefab_HAVOC_MKIII</PrefabName>
+            <PrefabName>Prefab_AV721_Vixen</PrefabName>
+            <PrefabName>Prefab_Aerion_VI-X</PrefabName>
+            <PrefabName>Prefab_Bastion_VI-X</PrefabName>
+
+
+        </GridsForSale>
+
+        <CanSellOxygen>true</CanSellOxygen>
+        <CanSellHydrogen>true</CanSellHydrogen>
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>
+
+        <MaxContractCount>25</MaxContractCount>
+
+    </Definition>
+</Definitions>

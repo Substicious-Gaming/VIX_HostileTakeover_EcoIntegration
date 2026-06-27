@@ -1,0 +1,2444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Prefabs>
+    <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="Prefab_Valor_Scout_MKII" />
+        <DisplayName>Valor Scout Mk.II</DisplayName>
+        <Description>Designed as a companion scout vehicle to the Valor VI-X
+        
+        Lightweight and maneuverable. Charge connector located on the left side behind the driver seat.</Description>
+        <Icon>Textures\GUI\Icons\VIX Prefabs\Valor_Scout_MkII.dds</Icon>
+        <TooltipImage>Textures\GUI\Icons\VIX Prefabs\Valor_Scout_MkII_Tooltip.png</TooltipImage>
+        <EnvironmentType>PlanetWithAtmosphere</EnvironmentType>
+      <CubeGrids>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>99253704086643644</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>99253704086643644</Name>
+          <PositionAndOrientation>
+            <Position x="0" y="0" z="0" />
+            <Forward x="-0.05471401" y="-0.079498485" z="-0.9953323" />
+            <Up x="0.97486746" y="0.21134663" z="-0.07046957" />
+            <Orientation>
+              <X>-0.048175275</X>
+              <Y>-0.0036051963</Y>
+              <Z>-0.6261037</Z>
+              <W>0.7782418</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
+              <SubtypeName>SmallShortSuspension2x2</SubtypeName>
+              <EntityId>77588385326336807</EntityId>
+              <Min x="0" y="5" z="0" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]Short Wheel Suspension 2x2 RF</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <TopBlockId>75353764395540567</TopBlockId>
+              <ShareInertiaTensor>false</ShareInertiaTensor>
+              <SafetyDetach>5</SafetyDetach>
+              <RotorEntityId xsi:nil="true" />
+              <WeldedEntityId xsi:nil="true" />
+              <SteerAngle>-0</SteerAngle>
+              <Damping>0.9</Damping>
+              <Strength>3.4028235E+38</Strength>
+              <Propulsion>true</Propulsion>
+              <Friction>2.8</Friction>
+              <Power>0</Power>
+              <Height>-0.32</Height>
+              <MaxSteerAngle>0.26161018</MaxSteerAngle>
+              <InvertSteer>false</InvertSteer>
+              <InvertPropulsion>false</InvertPropulsion>
+              <SpeedLimit>80.46573</SpeedLimit>
+              <PowerNew>0.4563836</PowerNew>
+              <StrengthNew>0.11262668</StrengthNew>
+              <FrictionNew>0.5</FrictionNew>
+              <AirShockEnabled>true</AirShockEnabled>
+              <BrakingEnabled>true</BrakingEnabled>
+              <SteeringOverride>0</SteeringOverride>
+              <PropulsionOverride>0</PropulsionOverride>
+              <IsParkingEnabled>true</IsParkingEnabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
+              <SubtypeName>SmallShortSuspension2x2Mirrored</SubtypeName>
+              <EntityId>82188447878613182</EntityId>
+              <Min x="1" y="5" z="0" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]Short Wheel Suspension 2x2 LF</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <TopBlockId>138881701300050319</TopBlockId>
+              <ShareInertiaTensor>false</ShareInertiaTensor>
+              <SafetyDetach>5</SafetyDetach>
+              <RotorEntityId xsi:nil="true" />
+              <WeldedEntityId xsi:nil="true" />
+              <SteerAngle>-0</SteerAngle>
+              <Damping>0.9</Damping>
+              <Strength>3.4028235E+38</Strength>
+              <Propulsion>true</Propulsion>
+              <Friction>2.8</Friction>
+              <Power>0</Power>
+              <Height>-0.32</Height>
+              <MaxSteerAngle>0.26161018</MaxSteerAngle>
+              <InvertSteer>false</InvertSteer>
+              <InvertPropulsion>false</InvertPropulsion>
+              <SpeedLimit>80.46573</SpeedLimit>
+              <PowerNew>0.4563836</PowerNew>
+              <StrengthNew>0.11262668</StrengthNew>
+              <FrictionNew>0.5</FrictionNew>
+              <AirShockEnabled>true</AirShockEnabled>
+              <BrakingEnabled>true</BrakingEnabled>
+              <SteeringOverride>0</SteeringOverride>
+              <PropulsionOverride>0</PropulsionOverride>
+              <IsParkingEnabled>true</IsParkingEnabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>95588647735958489</EntityId>
+              <Min x="1" y="5" z="-1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Valor Scout MK.II]Small Battery</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>82140877939878836</EntityId>
+              <Min x="0" y="5" z="-1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Valor Scout MK.II]Small Battery 2</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="6" z="1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="6" z="1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="1" y="6" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="6" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="6" z="1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="2" y="6" z="1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
+              <SubtypeName>RoverCockpit</SubtypeName>
+              <EntityId>121359883031329496</EntityId>
+              <Min x="-1" y="5" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyMultiTextPanelComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_MultiTextPanelComponent">
+                      <TextPanelsContents>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_EnergyHydrogen</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_ArtificialHorizon</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_Gravity</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_Velocity</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_ClockAnalog</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                      </TextPanelsContents>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Valor Scout MK.II]Passenger Seat</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <PilotRelativeWorld xsi:nil="true" />
+              <PilotGunDefinition xsi:nil="true" />
+              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <OxygenLevel>0</OxygenLevel>
+              <PilotJetpackEnabled xsi:nil="true" />
+              <TargetData>
+                <TargetId>0</TargetId>
+                <IsTargetLocked>false</IsTargetLocked>
+                <LockingProgress>0</LockingProgress>
+              </TargetData>
+              <SitAnimation>0</SitAnimation>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
+              <SubtypeName>RoverCockpit</SubtypeName>
+              <EntityId>75483520337840743</EntityId>
+              <Min x="1" y="5" z="-4" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyMultiTextPanelComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_MultiTextPanelComponent">
+                      <TextPanelsContents>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_EnergyHydrogen</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_ArtificialHorizon</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073920</PackedValue>
+                            <X>0</X>
+                            <Y>1</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>1</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_Gravity</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_Velocity</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                        <MySerializedTextPanelData>
+                          <ChangeInterval>0</ChangeInterval>
+                          <Font Type="MyObjectBuilder_FontDefinition" Subtype="Debug" />
+                          <FontSize>1</FontSize>
+                          <ShowText>NONE</ShowText>
+                          <FontColor>
+                            <PackedValue>4294967295</PackedValue>
+                            <X>255</X>
+                            <Y>255</Y>
+                            <Z>255</Z>
+                            <R>255</R>
+                            <G>255</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </FontColor>
+                          <BackgroundColor>
+                            <PackedValue>4278190080</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>0</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>0</B>
+                            <A>255</A>
+                          </BackgroundColor>
+                          <CurrentShownTexture>0</CurrentShownTexture>
+                          <ContentType>SCRIPT</ContentType>
+                          <SelectedScript>TSS_ClockAnalog</SelectedScript>
+                          <TextPadding>2</TextPadding>
+                          <CustomizeScripts>true</CustomizeScripts>
+                          <ScriptBackgroundColor>
+                            <PackedValue>4281073664</PackedValue>
+                            <X>0</X>
+                            <Y>0</Y>
+                            <Z>44</Z>
+                            <R>0</R>
+                            <G>0</G>
+                            <B>44</B>
+                            <A>255</A>
+                          </ScriptBackgroundColor>
+                          <ScriptForegroundColor>
+                            <PackedValue>4294962611</PackedValue>
+                            <X>179</X>
+                            <Y>237</Y>
+                            <Z>255</Z>
+                            <R>179</R>
+                            <G>237</G>
+                            <B>255</B>
+                            <A>255</A>
+                          </ScriptForegroundColor>
+                          <Sprites>
+                            <Length>0</Length>
+                          </Sprites>
+                          <UpdateStartOfFirstTexture>1069696</UpdateStartOfFirstTexture>
+                        </MySerializedTextPanelData>
+                      </TextPanelsContents>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Valor Scout MK.II]Driver Seat</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>SwitchLock</Action>
+                      <BlockEntityId>117281440330020850</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>1</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>Recharge</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Batteries</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>OnOff</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Lights</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>4</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>HandBrake</Action>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>7</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>DecreaseStrength</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Suspension</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>8</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>IncreasePower</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Suspension</GroupName>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <SlotsGamepad>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>SwitchLock</Action>
+                      <BlockEntityId>117281440330020850</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>1</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>Recharge</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Batteries</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>OnOff</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Lights</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>4</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>HandBrake</Action>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>8</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>DecreaseStrength</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Suspension</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>9</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>IncreasePower</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>75483520337840743</BlockEntityId>
+                      <GroupName>[Valor Scout MK.II]Suspension</GroupName>
+                    </Data>
+                  </Slot>
+                </SlotsGamepad>
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <IsMainCockpit>true</IsMainCockpit>
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <PilotRelativeWorld>
+                <Position x="-0.4718668460845947" y="-0.6227464079856873" z="-3.085862398147583" />
+                <Forward x="0.12798712" y="-0.18533936" z="0.9743042" />
+                <Up x="0.01324907" y="0.9826153" z="0.18517995" />
+                <Orientation>
+                  <X>0.00061824586</X>
+                  <Y>0.99355507</Y>
+                  <Z>0.09323069</Z>
+                  <W>-0.064466685</W>
+                </Orientation>
+              </PilotRelativeWorld>
+              <PilotGunDefinition xsi:nil="true" />
+              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <OxygenLevel>0</OxygenLevel>
+              <PilotJetpackEnabled xsi:nil="true" />
+              <TargetData>
+                <TargetId>0</TargetId>
+                <IsTargetLocked>false</IsTargetLocked>
+                <LockingProgress>0</LockingProgress>
+              </TargetData>
+              <SitAnimation>0</SitAnimation>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>96448987275775156</EntityId>
+              <Min x="1" y="5" z="-5" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Valor Scout MK.II]Gyroscope</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>82540717734347637</EntityId>
+              <Min x="0" y="5" z="-5" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Valor Scout MK.II]Small Battery 3</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
+              <SubtypeName>SmallShortSuspension2x2</SubtypeName>
+              <EntityId>128831385169867500</EntityId>
+              <Min x="0" y="5" z="-6" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]Short Wheel Suspension 2x2 RB</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <TopBlockId>84694511922001439</TopBlockId>
+              <ShareInertiaTensor>false</ShareInertiaTensor>
+              <SafetyDetach>5</SafetyDetach>
+              <RotorEntityId xsi:nil="true" />
+              <WeldedEntityId xsi:nil="true" />
+              <SteerAngle>0</SteerAngle>
+              <Steering>false</Steering>
+              <Damping>0.9</Damping>
+              <Strength>3.4028235E+38</Strength>
+              <Propulsion>true</Propulsion>
+              <Friction>2.8</Friction>
+              <Power>0</Power>
+              <Height>-0.32</Height>
+              <MaxSteerAngle>0.349066</MaxSteerAngle>
+              <InvertSteer>false</InvertSteer>
+              <InvertPropulsion>false</InvertPropulsion>
+              <SpeedLimit>80.46573</SpeedLimit>
+              <PowerNew>0.4563836</PowerNew>
+              <StrengthNew>0.11262668</StrengthNew>
+              <FrictionNew>0.5</FrictionNew>
+              <AirShockEnabled>true</AirShockEnabled>
+              <BrakingEnabled>true</BrakingEnabled>
+              <SteeringOverride>0</SteeringOverride>
+              <PropulsionOverride>0</PropulsionOverride>
+              <IsParkingEnabled>true</IsParkingEnabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MotorSuspension">
+              <SubtypeName>SmallShortSuspension2x2Mirrored</SubtypeName>
+              <EntityId>95109561282390809</EntityId>
+              <Min x="1" y="5" z="-6" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]Short Wheel Suspension 2x2 LB</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <TopBlockId>114449385511413171</TopBlockId>
+              <ShareInertiaTensor>false</ShareInertiaTensor>
+              <SafetyDetach>5</SafetyDetach>
+              <RotorEntityId xsi:nil="true" />
+              <WeldedEntityId xsi:nil="true" />
+              <SteerAngle>0</SteerAngle>
+              <Steering>false</Steering>
+              <Damping>0.9</Damping>
+              <Strength>3.4028235E+38</Strength>
+              <Propulsion>true</Propulsion>
+              <Friction>2.8</Friction>
+              <Power>0</Power>
+              <Height>-0.32</Height>
+              <MaxSteerAngle>0.349066</MaxSteerAngle>
+              <InvertSteer>false</InvertSteer>
+              <InvertPropulsion>false</InvertPropulsion>
+              <SpeedLimit>80.46573</SpeedLimit>
+              <PowerNew>0.4563836</PowerNew>
+              <StrengthNew>0.11262668</StrengthNew>
+              <FrictionNew>0.5</FrictionNew>
+              <AirShockEnabled>true</AirShockEnabled>
+              <BrakingEnabled>true</BrakingEnabled>
+              <SteeringOverride>0</SteeringOverride>
+              <PropulsionOverride>0</PropulsionOverride>
+              <IsParkingEnabled>true</IsParkingEnabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="2" y="6" z="-1" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Tip</SubtypeName>
+              <Min x="2" y="6" z="0" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="2" y="5" z="1" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="5" z="1" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="5" z="1" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="5" z="1" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>121118563738184914</EntityId>
+              <Min x="3" y="5" z="-5" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLight</SubtypeName>
+              <EntityId>110510945757494019</EntityId>
+              <Min x="3" y="5" z="-7" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>75653290936230295</EntityId>
+              <Min x="-2" y="5" z="-5" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>102370610203605344</EntityId>
+              <Min x="3" y="5" z="-4" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>106966621291468448</EntityId>
+              <Min x="-2" y="5" z="-4" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>117568835562502205</EntityId>
+              <Min x="3" y="6" z="-4" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="6" z="-1" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Tip</SubtypeName>
+              <Min x="-1" y="6" z="0" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="-1" y="6" z="-1" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="6" z="-1" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x2Flat</SubtypeName>
+              <EntityId>103065214508964829</EntityId>
+              <Min x="0" y="8" z="-2" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x1Face</SubtypeName>
+              <EntityId>106289426011147231</EntityId>
+              <Min x="2" y="7" z="-1" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeName>
+              <EntityId>143059340276803215</EntityId>
+              <Min x="3" y="6" z="0" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>129307422017686117</EntityId>
+              <Min x="0" y="8" z="-5" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>89843504250063511</EntityId>
+              <Min x="3" y="6" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>81349834307066472</EntityId>
+              <Min x="-2" y="6" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
+              <SubtypeName>SmallBlockSmallContainer</SubtypeName>
+              <EntityId>99177804588386686</EntityId>
+              <Min x="1" y="6" z="-5" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
+              <SubtypeName>ConnectorSmall</SubtypeName>
+              <EntityId>117281440330020850</EntityId>
+              <Min x="2" y="6" z="-5" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <DeformationRatio>0.5</DeformationRatio>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.064</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>10</FramesFromLastTrigger>
+                      <TimerTickInFrames>80</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <MasterToSlaveTransform xsi:nil="true" />
+              <MasterToSlaveGrid xsi:nil="true" />
+              <IsMaster>true</IsMaster>
+              <TradingEnabled>false</TradingEnabled>
+              <AutoUnlockTime>0</AutoUnlockTime>
+              <TimeOfConnection>0</TimeOfConnection>
+              <IsParkingEnabled>true</IsParkingEnabled>
+              <IsPowerTransferOverrideEnabled>false</IsPowerTransferOverrideEnabled>
+              <IsApproaching>false</IsApproaching>
+              <IsConnecting>false</IsConnecting>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="5" z="-7" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="5" z="-7" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-1" y="5" z="-7" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="2" y="5" z="-7" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>117412426048466847</EntityId>
+              <Min x="3" y="5" z="-2" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>81501755227051903</EntityId>
+              <Min x="-2" y="5" z="-2" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>95336281816402663</EntityId>
+              <Min x="3" y="6" z="-6" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>144034147978874984</EntityId>
+              <Min x="-2" y="6" z="-6" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorQuarterPanelLight</SubtypeName>
+              <EntityId>107106014310798634</EntityId>
+              <Min x="1" y="5" z="-8" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorQuarterPanelLight</SubtypeName>
+              <EntityId>86975914499959864</EntityId>
+              <Min x="0" y="5" z="-8" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLight</SubtypeName>
+              <EntityId>127935295276300775</EntityId>
+              <Min x="0" y="6" z="-8" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeName>
+              <EntityId>85357644953514908</EntityId>
+              <Min x="1" y="6" z="-8" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>73431162528637719</EntityId>
+              <Min x="2" y="6" z="-8" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>89838805529565454</EntityId>
+              <Min x="1" y="7" z="-5" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
+              <SubtypeName>SmallBlockSmallContainer</SubtypeName>
+              <EntityId>127465874364423514</EntityId>
+              <Min x="-1" y="6" z="-5" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
+              <SubtypeName>SmallBlockSmallContainer</SubtypeName>
+              <EntityId>140474928005865934</EntityId>
+              <Min x="0" y="6" z="-5" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>121702788119986109</EntityId>
+              <Min x="2" y="7" z="-5" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorQuarterPanelLight</SubtypeName>
+              <EntityId>72580832188418741</EntityId>
+              <Min x="3" y="8" z="-5" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>89962893752133683</EntityId>
+              <Min x="-2" y="7" z="-5" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>85319069498494943</EntityId>
+              <Min x="3" y="7" z="-5" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorQuarterPanelLight</SubtypeName>
+              <EntityId>98728567502645926</EntityId>
+              <Min x="-2" y="8" z="-5" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>127758590032048940</EntityId>
+              <Min x="-1" y="6" z="-8" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
+              <SubtypeName>PassengerBench</SubtypeName>
+              <EntityId>86268791670125152</EntityId>
+              <Min x="-1" y="6" z="-7" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>6</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <HorizonIndicatorEnabled>false</HorizonIndicatorEnabled>
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
+              <PilotRelativeWorld xsi:nil="true" />
+              <PilotGunDefinition xsi:nil="true" />
+              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <OxygenLevel>0</OxygenLevel>
+              <PilotJetpackEnabled xsi:nil="true" />
+              <TargetData>
+                <TargetId>0</TargetId>
+                <IsTargetLocked>false</IsTargetLocked>
+                <LockingProgress>0</LockingProgress>
+              </TargetData>
+              <SitAnimation>0</SitAnimation>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
+              <SubtypeName>PassengerBench</SubtypeName>
+              <EntityId>128583876499985087</EntityId>
+              <Min x="1" y="6" z="-7" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>1</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>5</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <HorizonIndicatorEnabled>false</HorizonIndicatorEnabled>
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
+              <PilotRelativeWorld xsi:nil="true" />
+              <PilotGunDefinition xsi:nil="true" />
+              <IsInFirstPersonView>true</IsInFirstPersonView>
+              <OxygenLevel>0</OxygenLevel>
+              <PilotJetpackEnabled xsi:nil="true" />
+              <TargetData>
+                <TargetId>0</TargetId>
+                <IsTargetLocked>false</IsTargetLocked>
+                <LockingProgress>0</LockingProgress>
+              </TargetData>
+              <SitAnimation>0</SitAnimation>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>96288280030092187</EntityId>
+              <Min x="-2" y="6" z="-5" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ReflectorLight">
+              <SubtypeName>OffsetSpotlight</SubtypeName>
+              <EntityId>106820575380968586</EntityId>
+              <Min x="2" y="5" z="2" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]HeadLight</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>0.75</Radius>
+              <ReflectorRadius>60</ReflectorRadius>
+              <Falloff>1.5</Falloff>
+              <Intensity>3</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+              <RotationSpeed>0.08</RotationSpeed>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>142677478031102858</EntityId>
+              <Min x="-2" y="6" z="-4" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="2" y="5" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x2Flat</SubtypeName>
+              <EntityId>117272953668439159</EntityId>
+              <Min x="1" y="8" z="-4" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ReflectorLight">
+              <SubtypeName>OffsetSpotlight</SubtypeName>
+              <EntityId>91353652230571435</EntityId>
+              <Min x="-1" y="5" z="2" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]HeadLight</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>4</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>0.75</Radius>
+              <ReflectorRadius>60</ReflectorRadius>
+              <Falloff>1.5</Falloff>
+              <Intensity>3</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+              <RotationSpeed>0.08</RotationSpeed>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="5" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
+              <SubtypeName>OffsetLight</SubtypeName>
+              <EntityId>99324610222244060</EntityId>
+              <Min x="-1" y="5" z="-8" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]BrakeLight</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>1.5948464</Radius>
+              <ReflectorRadius>120</ReflectorRadius>
+              <ColorGreen>0</ColorGreen>
+              <ColorBlue>0</ColorBlue>
+              <Falloff>0.38223544</Falloff>
+              <Intensity>5</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>85213612619113558</EntityId>
+              <Min x="3" y="7" z="-7" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>94871269027025185</EntityId>
+              <Min x="3" y="7" z="-6" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x2Flat</SubtypeName>
+              <EntityId>95091660323024500</EntityId>
+              <Min x="0" y="8" z="-4" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>140750837804577742</EntityId>
+              <Min x="-2" y="7" z="-7" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x1Face</SubtypeName>
+              <EntityId>73844796467440556</EntityId>
+              <Min x="-1" y="7" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>99258200007994390</EntityId>
+              <Min x="-1" y="7" z="-8" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>135924068132706543</EntityId>
+              <Min x="2" y="7" z="-8" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ReflectorLight">
+              <SubtypeName>OffsetSpotlight</SubtypeName>
+              <EntityId>113159048625861458</EntityId>
+              <Min x="-1" y="8" z="-4" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]Spotlight</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>12</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>0.75</Radius>
+              <ReflectorRadius>60</ReflectorRadius>
+              <Falloff>1.5</Falloff>
+              <Intensity>3</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+              <RotationSpeed>0.08</RotationSpeed>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>104659324964775709</EntityId>
+              <Min x="-2" y="7" z="-6" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x1Slope</SubtypeName>
+              <EntityId>84927720976529896</EntityId>
+              <Min x="0" y="7" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallWindow1x1Slope</SubtypeName>
+              <EntityId>98989660175949778</EntityId>
+              <Min x="1" y="7" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
+              <SubtypeName>OffsetLight</SubtypeName>
+              <EntityId>99050472415588873</EntityId>
+              <Min x="2" y="5" z="-8" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]BrakeLight</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>1.5948464</Radius>
+              <ReflectorRadius>120</ReflectorRadius>
+              <ColorGreen>0</ColorGreen>
+              <ColorBlue>0</ColorBlue>
+              <Falloff>0.38223544</Falloff>
+              <Intensity>5</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeName>
+              <EntityId>123113058506272986</EntityId>
+              <Min x="3" y="6" z="-3" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLight</SubtypeName>
+              <EntityId>86116510193180517</EntityId>
+              <Min x="-2" y="6" z="-3" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="2" y="5" z="-5" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="5" z="-5" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeName>
+              <EntityId>108446804031195909</EntityId>
+              <Min x="-2" y="5" z="-7" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>BarredWindow</SubtypeName>
+              <EntityId>87878096005705927</EntityId>
+              <Min x="3" y="6" z="-5" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>107952520652214874</EntityId>
+              <Min x="-2" y="5" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>91163056845233577</EntityId>
+              <Min x="3" y="5" z="-1" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ReflectorLight">
+              <SubtypeName>OffsetSpotlight</SubtypeName>
+              <EntityId>91813166219628609</EntityId>
+              <Min x="2" y="8" z="-4" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+              <CustomName>[Valor Scout MK.II]Spotlight</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>11</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>0.75</Radius>
+              <ReflectorRadius>60</ReflectorRadius>
+              <Falloff>1.5</Falloff>
+              <Intensity>3</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+              <RotationSpeed>0.08</RotationSpeed>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>104161604792159214</EntityId>
+              <Min x="-1" y="8" z="-5" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>97762922572568870</EntityId>
+              <Min x="2" y="8" z="-5" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>80306545497595340</EntityId>
+              <Min x="0" y="7" z="-5" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>102636086557597420</EntityId>
+              <Min x="1" y="8" z="-5" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>72623461128700684</EntityId>
+              <Min x="3" y="6" z="-7" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>88122266223490474</EntityId>
+              <Min x="3" y="5" z="-3" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>86017722613938485</EntityId>
+              <Min x="-2" y="6" z="-7" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>87075447796398061</EntityId>
+              <Min x="-1" y="7" z="-5" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.96" z="-0.5" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>132900591874931436</EntityId>
+              <Min x="-2" y="5" z="-3" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLight</SubtypeName>
+              <EntityId>84484552202054619</EntityId>
+              <Min x="-2" y="6" z="0" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>108284132456560549</EntityId>
+              <Min x="0" y="7" z="0" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>140302574317555537</EntityId>
+              <Min x="1" y="7" z="0" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLight</SubtypeName>
+              <EntityId>111710307311388799</EntityId>
+              <Min x="0" y="6" z="2" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeName>
+              <EntityId>98945694535844065</EntityId>
+              <Min x="1" y="6" z="2" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLight</SubtypeName>
+              <EntityId>120740082807846603</EntityId>
+              <Min x="0" y="5" z="2" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideTipPanelLightInv</SubtypeName>
+              <EntityId>96310497288695929</EntityId>
+              <Min x="1" y="5" z="2" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <XMirroxPlane x="1" y="6" z="1" />
+          <XMirroxOdd>true</XMirroxOdd>
+          <ConveyorLines>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="2" y="6" z="-5" />
+              <StartDirection>Left</StartDirection>
+              <EndPosition x="1" y="6" z="-5" />
+              <EndDirection>Right</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="6" z="-5" />
+              <StartDirection>Left</StartDirection>
+              <EndPosition x="0" y="6" z="-5" />
+              <EndDirection>Right</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="6" z="-5" />
+              <StartDirection>Left</StartDirection>
+              <EndPosition x="-1" y="6" z="-5" />
+              <EndDirection>Right</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+          </ConveyorLines>
+          <BlockGroups>
+            <MyObjectBuilder_BlockGroup>
+              <Name>[Valor Scout MK.II]Lights</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>5</Y>
+                  <Z>-8</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>2</X>
+                  <Y>5</Y>
+                  <Z>-8</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>2</X>
+                  <Y>8</Y>
+                  <Z>-4</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>8</Y>
+                  <Z>-4</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>2</X>
+                  <Y>5</Y>
+                  <Z>2</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>5</Y>
+                  <Z>2</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+            <MyObjectBuilder_BlockGroup>
+              <Name>[Valor Scout MK.II]Suspension</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>5</Y>
+                  <Z>0</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>5</Y>
+                  <Z>-6</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>5</Y>
+                  <Z>0</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>5</Y>
+                  <Z>-6</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+            <MyObjectBuilder_BlockGroup>
+              <Name>[Valor Scout MK.II]Batteries</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>5</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>5</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>5</Y>
+                  <Z>-5</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+          </BlockGroups>
+          <Handbrake>true</Handbrake>
+          <DisplayName>Valor Scout MK.II</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>138039401579787001</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>138039401579787001</Name>
+          <PositionAndOrientation>
+            <Position x="2.2695083618164062" y="1.0234375" z="0.044620513916015625" />
+            <Forward x="0.054913804" y="0.0795418" z="0.9953179" />
+            <Up x="-0.21596237" y="0.9741728" z="-0.06593686" />
+            <Orientation>
+              <X>-0.10757416</X>
+              <Y>0.993019</Y>
+              <Z>-0.03662535</Z>
+              <W>-0.031617567</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
+              <SubtypeName>SmallRealWheel2x2</SubtypeName>
+              <EntityId>75353764395540567</EntityId>
+              <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <YieldLastComponent>false</YieldLastComponent>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <DisplayName>Small Grid 2663</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>134759266859865578</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>134759266859865578</Name>
+          <PositionAndOrientation>
+            <Position x="2.56817626953125" y="-0.485931396484375" z="-0.353485107421875" />
+            <Forward x="-0.05451425" y="-0.0794552" z="-0.9953467" />
+            <Up x="0.2159624" y="-0.9741729" z="0.06593688" />
+            <Orientation>
+              <X>0.03141407</X>
+              <Y>0.036603313</Y>
+              <Z>0.9930254</Z>
+              <W>-0.10758166</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
+              <SubtypeName>SmallRealWheel2x2Mirrored</SubtypeName>
+              <EntityId>138881701300050319</EntityId>
+              <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <YieldLastComponent>false</YieldLastComponent>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <DisplayName>Small Grid 8898</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>133067891114540527</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>133067891114540527</Name>
+          <PositionAndOrientation>
+            <Position x="2.1056480407714844" y="0.785003662109375" z="-2.9413108825683594" />
+            <Forward x="0.054572683" y="0.07946785" z="0.99534255" />
+            <Up x="-0.21596235" y="0.9741728" z="-0.06593686" />
+            <Orientation>
+              <X>-0.10758056</X>
+              <Y>0.9930245</Y>
+              <Z>-0.036606528</Z>
+              <W>-0.031443827</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
+              <SubtypeName>SmallRealWheel2x2</SubtypeName>
+              <EntityId>84694511922001439</EntityId>
+              <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <YieldLastComponent>false</YieldLastComponent>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <DisplayName>Small Grid 993</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>83732033452888796</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>83732033452888796</Name>
+          <PositionAndOrientation>
+            <Position x="2.4042510986328125" y="-0.724365234375" z="-3.339599609375" />
+            <Forward x="-0.0549138" y="-0.07954183" z="-0.9953179" />
+            <Up x="0.21596242" y="-0.974173" z="0.06593689" />
+            <Orientation>
+              <X>0.031617567</X>
+              <Y>0.036625367</Y>
+              <Z>0.993019</Z>
+              <W>-0.107574165</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Wheel">
+              <SubtypeName>SmallRealWheel2x2Mirrored</SubtypeName>
+              <EntityId>114449385511413171</EntityId>
+              <ColorMaskHSV x="0" y="-0.8" z="-0.45" />
+              <SkinSubtypeId>Clean_Armor</SkinSubtypeId>
+              <YieldLastComponent>false</YieldLastComponent>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <DisplayName>Small Grid 5825</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+      </CubeGrids>
+      <EnvironmentType>None</EnvironmentType>
+    </Prefab>
+  </Prefabs>
+</Definitions>

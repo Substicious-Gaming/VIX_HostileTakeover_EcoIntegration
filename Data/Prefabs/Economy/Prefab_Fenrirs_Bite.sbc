@@ -1,0 +1,2778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Prefabs>
+    <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="Prefab_Fenrir_Bite" />
+        <DisplayName>Fenrir's Bite</DisplayName>
+        <Description>Experience the terror of the FENRIR'S BITE, a devastating autonomous missile designed to hunt down and obliterate its targets with relentless precision.</Description>
+        <Icon>Textures\GUI\Icons\VIX Prefabs\Fenrirs_Bite.dds</Icon>
+        <TooltipImage>Textures\GUI\Icons\VIX Prefabs\Fenrirs_Bite_Tooltip.png</TooltipImage>
+        <EnvironmentType>Space</EnvironmentType>
+      <CubeGrids>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>100384739078440564</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>100384739078440564</Name>
+          <PositionAndOrientation>
+            <Position x="0" y="0" z="0" />
+            <Forward x="0.8560125" y="-0.10526702" z="-0.5061239" />
+            <Up x="0.14974353" y="0.98756576" z="0.04786223" />
+            <Orientation>
+              <X>-0.016603235</X>
+              <Y>-0.49665114</Y>
+              <Z>-0.07708088</Z>
+              <W>0.86436135</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_MergeBlock">
+              <SubtypeName>SmallShipSmallMergeBlock</SubtypeName>
+              <EntityId>110275899093524964</EntityId>
+              <Min x="0" y="7" z="0" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Missile Merge Block</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
+              <SubtypeName>SmallBlockInsetConnector</SubtypeName>
+              <EntityId>130724212865625618</EntityId>
+              <Min x="0" y="7" z="-1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <DeformationRatio>0.5</DeformationRatio>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.064</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>40</FramesFromLastTrigger>
+                      <TimerTickInFrames>80</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Missile Connector</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+              <MasterToSlaveTransform xsi:nil="true" />
+              <MasterToSlaveGrid xsi:nil="true" />
+              <IsMaster>true</IsMaster>
+              <TradingEnabled>false</TradingEnabled>
+              <AutoUnlockTime>0</AutoUnlockTime>
+              <TimeOfConnection>0</TimeOfConnection>
+              <IsParkingEnabled>true</IsParkingEnabled>
+              <IsPowerTransferOverrideEnabled>false</IsPowerTransferOverrideEnabled>
+              <IsApproaching>false</IsApproaching>
+              <IsConnecting>false</IsConnecting>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>141602975316601635</EntityId>
+              <Min x="1" y="16" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>27</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
+              <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
+              <EntityId>129597035502811882</EntityId>
+              <Min x="0" y="15" z="-2" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>SmallBlockConveyor</SubtypeName>
+              <EntityId>88083604951481014</EntityId>
+              <Min x="0" y="15" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>87092715242084145</EntityId>
+              <Min x="0" y="16" z="-2" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>30</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
+              <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
+              <EntityId>95281212222238518</EntityId>
+              <Min x="0" y="8" z="-2" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>84819284565856169</EntityId>
+              <Min x="0" y="12" z="-2" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>39</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_OxygenTank">
+              <SubtypeName>SmallHydrogenTankSmall</SubtypeName>
+              <EntityId>117482545786414626</EntityId>
+              <Min x="0" y="9" z="-1" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.12</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Small Hydrogen Tank</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>6</NumberInGrid>
+              <Enabled>true</Enabled>
+              <IsStockpiling>true</IsStockpiling>
+              <FilledRatio>1</FilledRatio>
+              <AutoRefill>false</AutoRefill>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>132017862137165362</EntityId>
+              <Min x="1" y="7" z="-1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster F</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>89459725145149060</EntityId>
+              <Min x="-1" y="7" z="-1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster F</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>142595976602180327</EntityId>
+              <Min x="0" y="7" z="-2" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster F</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>92170418924871977</EntityId>
+              <Min x="-1" y="16" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>29</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>91904674617496270</EntityId>
+              <Min x="-1" y="11" z="-1" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>32</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
+              <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
+              <EntityId>108309981167167162</EntityId>
+              <Min x="1" y="8" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>SmallBlockConveyor</SubtypeName>
+              <EntityId>137815656041591848</EntityId>
+              <Min x="0" y="11" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>143797659695043899</EntityId>
+              <Min x="-1" y="12" z="-1" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>31</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>SmallBlockConveyor</SubtypeName>
+              <EntityId>100400860925011398</EntityId>
+              <Min x="0" y="8" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>108184797939573139</EntityId>
+              <Min x="0" y="11" z="0" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>33</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
+              <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
+              <EntityId>88208993806025056</EntityId>
+              <Min x="-1" y="8" z="-1" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>103474884575702568</EntityId>
+              <Min x="1" y="10" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Gyroscope</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_OxygenTank">
+              <SubtypeName>SmallHydrogenTankSmall</SubtypeName>
+              <EntityId>90474650913147175</EntityId>
+              <Min x="0" y="13" z="-1" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items />
+                      <nextItemId>0</nextItemId>
+                      <Volume>0.12</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Small Hydrogen Tank</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>8</NumberInGrid>
+              <Enabled>true</Enabled>
+              <IsStockpiling>true</IsStockpiling>
+              <FilledRatio>1</FilledRatio>
+              <AutoRefill>false</AutoRefill>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>SmallBlockConveyor</SubtypeName>
+              <EntityId>78468113952305999</EntityId>
+              <Min x="0" y="12" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorBlock</SubtypeName>
+              <Min x="0" y="16" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
+              <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
+              <EntityId>104481172746684757</EntityId>
+              <Min x="1" y="15" z="-1" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_EventControllerBlock">
+              <SubtypeName>EventControllerSmall</SubtypeName>
+              <EntityId>111018118014919916</EntityId>
+              <Min x="1" y="9" z="-1" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyEventAngleChanged</TypeId>
+                    <Component xsi:type="MyObjectBuilder_EventAngleChanged">
+                      <Angle>0</Angle>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyEventSurfaceHeight</TypeId>
+                    <Component xsi:type="MyObjectBuilder_EventSurfaceHeight">
+                      <Height>1</Height>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyEventGridSpeedChanged</TypeId>
+                    <Component xsi:type="MyObjectBuilder_EventGridSpeedChanged">
+                      <Speed>100</Speed>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyEventNaturalGravityChanged</TypeId>
+                    <Component xsi:type="MyObjectBuilder_EventNaturalGravityChanged">
+                      <Gravity>1</Gravity>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyEventDistanceToLockedTarget</TypeId>
+                    <Component xsi:type="MyObjectBuilder_EventDistanceToLockedTarget">
+                      <DistanceToLockedTarget>2500</DistanceToLockedTarget>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Event Controller</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Lock</Action>
+                      <BlockEntityId>130724212865625618</BlockEntityId>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <SlotsGamepad />
+              </Toolbar>
+              <Threshold>0</Threshold>
+              <ANDGate>false</ANDGate>
+              <SelectedEvent>10</SelectedEvent>
+              <SelectedBlocks />
+              <ConditionInvert>false</ConditionInvert>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>82836645408960177</EntityId>
+              <Min x="0" y="11" z="-2" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>38</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>133629206490666560</EntityId>
+              <Min x="0" y="12" z="0" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>34</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>128559660786805783</EntityId>
+              <Min x="1" y="11" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>35</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallHydrogenThrust</SubtypeName>
+              <EntityId>77513941198599573</EntityId>
+              <Min x="1" y="12" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Hydrogen Thruster</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>37</NumberInGrid>
+              <Enabled>false</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ConveyorConnector">
+              <SubtypeName>ConveyorTubeDuctSmallCurved</SubtypeName>
+              <EntityId>100380785513094377</EntityId>
+              <Min x="-1" y="15" z="-1" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_TimerBlock">
+              <SubtypeName>TimerBlockReskinSmall</SubtypeName>
+              <EntityId>96347677351106083</EntityId>
+              <Min x="0" y="9" z="-2" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Launch</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>OnOff_On</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>96347677351106083</BlockEntityId>
+                      <GroupName>[Fenrir's Bite]Thrusters</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>1</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>Stockpile_Off</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>96347677351106083</BlockEntityId>
+                      <GroupName>[Fenrir's Bite]Hydro Tanks</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Unlock</Action>
+                      <BlockEntityId>130724212865625618</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>3</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>OnOff_Off</Action>
+                      <BlockEntityId>110275899093524964</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>9</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>IncreaseOverride</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>96347677351106083</BlockEntityId>
+                      <GroupName>[Fenrir's Bite]Forward Thrusters</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>18</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>IncreaseOverride</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>96347677351106083</BlockEntityId>
+                      <GroupName>[Fenrir's Bite]Forward Thrusters</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>27</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>IncreaseOverride</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>96347677351106083</BlockEntityId>
+                      <GroupName>[Fenrir's Bite]Forward Thrusters</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>36</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Start</Action>
+                      <BlockEntityId>117648598715828106</BlockEntityId>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <SlotsGamepad />
+              </Toolbar>
+              <Delay>1000</Delay>
+              <CurrentTime>0</CurrentTime>
+              <IsCountingDown>false</IsCountingDown>
+              <Silent>true</Silent>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_TimerBlock">
+              <SubtypeName>TimerBlockReskinSmall</SubtypeName>
+              <EntityId>117648598715828106</EntityId>
+              <Min x="0" y="10" z="-2" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Search</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>ActivateBehavior_On</Action>
+                      <BlockEntityId>102829634703394214</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>1</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>ActivateBehavior_On</Action>
+                      <BlockEntityId>115110031375964483</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Safety_On</Action>
+                      <BlockEntityId>90929929418349064</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>3</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Safety_On</Action>
+                      <BlockEntityId>80534394850777887</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>9</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>132017862137165362</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>10</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>89459725145149060</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>11</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>142595976602180327</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>18</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>132017862137165362</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>19</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>89459725145149060</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>20</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>142595976602180327</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>27</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>132017862137165362</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>28</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>89459725145149060</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>29</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>142595976602180327</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>36</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>132017862137165362</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>37</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>89459725145149060</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>38</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>142595976602180327</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>45</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>132017862137165362</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>46</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>89459725145149060</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>47</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>142595976602180327</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>54</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>132017862137165362</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>55</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>89459725145149060</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>56</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>DecreaseOverride</Action>
+                      <BlockEntityId>142595976602180327</BlockEntityId>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <SlotsGamepad />
+              </Toolbar>
+              <Delay>3000</Delay>
+              <CurrentTime>0</CurrentTime>
+              <IsCountingDown>false</IsCountingDown>
+              <Silent>true</Silent>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
+              <SubtypeName>SmallBlockRadioAntenna</SubtypeName>
+              <EntityId>74129893281027002</EntityId>
+              <Min x="0" y="13" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Antenna</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <BroadcastRadius>5000</BroadcastRadius>
+              <ShowShipName>true</ShowShipName>
+              <EnableBroadcasting>true</EnableBroadcasting>
+              <AttachedPB>0</AttachedPB>
+              <IgnoreAllied>false</IgnoreAllied>
+              <IgnoreOther>true</IgnoreOther>
+              <HudText />
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_TransponderBlock">
+              <SubtypeName>SmallBlockTransponder</SubtypeName>
+              <EntityId>87437614654198760</EntityId>
+              <Min x="0" y="15" z="0" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MySignalChannelEntityComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_SignalChannelEntityComponent">
+                      <Channel>6</Channel>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MySignalSenderEntityComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_SignalSenderEntityComponent" />
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MySignalReceiverEntityComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_SignalReceiverEntityComponent">
+                      <Toolbar>
+                        <ToolbarType>Character</ToolbarType>
+                        <SelectedSlot xsi:nil="true" />
+                        <Slots>
+                          <Slot>
+                            <Index>0</Index>
+                            <Item />
+                            <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                              <Action>Start</Action>
+                              <BlockEntityId>96347677351106083</BlockEntityId>
+                            </Data>
+                          </Slot>
+                        </Slots>
+                        <SlotsGamepad />
+                      </Toolbar>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MySignalConnectivityCheckerEntityComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_SignalConnectivityCheckerEntityComponent" />
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]Action Relay</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SensorBlock">
+              <SubtypeName>SmallBlockSensor</SubtypeName>
+              <EntityId>120369624615112686</EntityId>
+              <Min x="0" y="16" z="0" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Sensor</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <FieldMin x="-1.1089174" y="-0.18669122" z="-4.982286" />
+              <FieldMax x="1.1089174" y="1.2933657" z="3.1378257" />
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Detonate</Action>
+                      <BlockEntityId>80534394850777887</BlockEntityId>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>2</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalBlock">
+                      <Action>Detonate</Action>
+                      <BlockEntityId>90929929418349064</BlockEntityId>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <SlotsGamepad />
+              </Toolbar>
+              <PlaySound>true</PlaySound>
+              <DetectPlayers>false</DetectPlayers>
+              <DetectFloatingObjects>false</DetectFloatingObjects>
+              <DetectSmallShips>false</DetectSmallShips>
+              <DetectLargeShips>false</DetectLargeShips>
+              <DetectStations>false</DetectStations>
+              <DetectSubgrids>false</DetectSubgrids>
+              <IsActive>false</IsActive>
+              <DetectAsteroids>false</DetectAsteroids>
+              <DetectOwner>false</DetectOwner>
+              <DetectFriendly>false</DetectFriendly>
+              <DetectNeutral>false</DetectNeutral>
+              <DetectEnemy>true</DetectEnemy>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_FlightMovementBlock">
+              <SubtypeName>SmallFlightMovement</SubtypeName>
+              <EntityId>102829634703394214</EntityId>
+              <Min x="1" y="14" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyAutopilotComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_AutopilotComponent">
+                      <AutoPilotEnabled>false</AutoPilotEnabled>
+                      <FlightMode>0</FlightMode>
+                      <CurrentWaypointIndex>-1</CurrentWaypointIndex>
+                      <Waypoints />
+                      <DockingModeEnabled>false</DockingModeEnabled>
+                      <CollisionAvoidance>false</CollisionAvoidance>
+                      <Direction>0</Direction>
+                      <AutopilotSpeedLimit>100</AutopilotSpeedLimit>
+                      <WaitForFreeWay>false</WaitForFreeWay>
+                      <WaypointThresholdDistance>0</WaypointThresholdDistance>
+                      <Coords />
+                      <Names />
+                      <LookAtPosition xsi:nil="true" />
+                      <FacingDirection>Forward</FacingDirection>
+                      <AlignToGravity>true</AlignToGravity>
+                      <MinHeightAboveTerrain>10.109392</MinHeightAboveTerrain>
+                      <IsWorkAreaReturningToStart>false</IsWorkAreaReturningToStart>
+                      <WorkAreaStartForward>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                      </WorkAreaStartForward>
+                      <PitchAngle>0.7853982</PitchAngle>
+                      <RollAngle>0.7853982</RollAngle>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyAiBlockComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_AiBlockComponent">
+                      <IsActivated>false</IsActivated>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]AI Flight (Move)</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_OffensiveCombatBlock">
+              <SubtypeName>SmallOffensiveCombat</SubtypeName>
+              <EntityId>115110031375964483</EntityId>
+              <Min x="1" y="13" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MySearchEnemyComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_SearchEnemyComponent">
+                      <TargetingLockOptions>2</TargetingLockOptions>
+                      <SubsystemsToDestroy></SubsystemsToDestroy>
+                      <TargetEntityId>0</TargetEntityId>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyOffensiveCombatCircleOrbit</TypeId>
+                    <Component xsi:type="MyObjectBuilder_OffensiveCombatCircleOrbit">
+                      <CircleDistance>100</CircleDistance>
+                      <CircleInPGravity>false</CircleInPGravity>
+                      <FacingPriority />
+                      <WasActive>false</WasActive>
+                      <FacingMode>0</FacingMode>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyOffensiveCombatStayAtRange</TypeId>
+                    <Component xsi:type="MyObjectBuilder_OffensiveCombatStayAtRange">
+                      <MinimalDistance>199</MinimalDistance>
+                      <MaximalDistance>200</MaximalDistance>
+                      <FacingPriority />
+                      <EvasiveManeuvers>false</EvasiveManeuvers>
+                      <FacingMode>0</FacingMode>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyOffensiveCombatHitAndRun</TypeId>
+                    <Component xsi:type="MyObjectBuilder_OffensiveCombatHitAndRun">
+                      <BreakOffDistance>500</BreakOffDistance>
+                      <RetreatDistance>1000</RetreatDistance>
+                      <RetreatTimeout>30</RetreatTimeout>
+                      <RetreatAngle>90</RetreatAngle>
+                      <SelectedWeapons />
+                      <HitAndRunState>
+                        <CurrentState>None</CurrentState>
+                        <RunAwayDirection>
+                          <X>0</X>
+                          <Y>0</Y>
+                          <Z>0</Z>
+                        </RunAwayDirection>
+                        <LastPosition xsi:nil="true" />
+                        <RunAwayStartedFrame>2906389</RunAwayStartedFrame>
+                      </HitAndRunState>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyOffensiveCombatIntercept</TypeId>
+                    <Component xsi:type="MyObjectBuilder_OffensiveCombatIntercept">
+                      <Guidance>TargetPrediction</Guidance>
+                      <OverrideCollisionAvoidance>true</OverrideCollisionAvoidance>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyAiBlockComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_AiBlockComponent">
+                      <IsActivated>false</IsActivated>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>[Fenrir's Bite]AI Offensive (Combat)</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <TargetPriority>Closest</TargetPriority>
+              <UpdateTargetInterval>5</UpdateTargetInterval>
+              <SelectedAttackPattern>3</SelectedAttackPattern>
+              <CanTargetCharacters>false</CanTargetCharacters>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <PrevToolbarState xsi:nil="true" />
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>91321084580239042</EntityId>
+              <Min x="0" y="8" z="0" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Small Battery</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>124363231085415803</EntityId>
+              <Min x="-1" y="9" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Small Battery</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>89554756985855890</EntityId>
+              <Min x="-1" y="10" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Small Battery</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>101315801558987493</EntityId>
+              <Min x="-1" y="14" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Small Battery</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>4</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_BatteryBlock">
+              <SubtypeName>SmallBlockSmallBatteryBlock</SubtypeName>
+              <EntityId>127262372715931175</EntityId>
+              <Min x="-1" y="13" z="-1" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Small Battery</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>5</NumberInGrid>
+              <Enabled>true</Enabled>
+              <CurrentStoredPower>0.05</CurrentStoredPower>
+              <ProducerEnabled>true</ProducerEnabled>
+              <MaxStoredPower>0</MaxStoredPower>
+              <SemiautoEnabled>false</SemiautoEnabled>
+              <OnlyDischargeEnabled>false</OnlyDischargeEnabled>
+              <ChargeMode>0</ChargeMode>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="7" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="8" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="9" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="10" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="11" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="12" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="13" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="14" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="15" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="7" z="0" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="8" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="9" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="10" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="11" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="12" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="13" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="14" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="1" y="15" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="1" y="7" z="0" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="8" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="9" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="10" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="11" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="12" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="13" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="14" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="15" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="1" y="7" z="-2" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="8" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="9" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="10" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="11" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="12" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="13" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="14" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope</SubtypeName>
+              <Min x="-1" y="15" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="2" y="9" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-2" y="9" z="-1" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="2" y="10" z="-1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-2" y="10" z="-1" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-2" y="14" z="-1" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="2" y="14" z="-1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="-2" y="13" z="-1" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="2" y="13" z="-1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="13" z="1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="15" z="1" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="15" z="-3" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="14" z="1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="14" z="-3" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="13" z="-3" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="7" z="1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="7" z="-3" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="8" z="1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="8" z="-3" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="9" z="1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>HalfArmorBlock</SubtypeName>
+              <Min x="0" y="9" z="-3" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="10" z="1" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorSlope2Tip</SubtypeName>
+              <Min x="0" y="10" z="-3" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="16" z="0" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="1" y="16" z="0" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="-1" y="16" z="-2" />
+              <BlockOrientation Forward="Right" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Base</SubtypeName>
+              <Min x="1" y="16" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="-1" y="17" z="0" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="1" y="17" z="0" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="-1" y="17" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockArmorCorner2Tip</SubtypeName>
+              <Min x="1" y="17" z="-2" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorCenterPanelLight</SubtypeName>
+              <EntityId>135974046404530767</EntityId>
+              <Min x="-1" y="8" z="1" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorCenterPanelLight</SubtypeName>
+              <EntityId>73734954501620374</EntityId>
+              <Min x="1" y="8" z="1" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorCenterPanelLight</SubtypeName>
+              <EntityId>141574634792381784</EntityId>
+              <Min x="-1" y="8" z="-3" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorCenterPanelLight</SubtypeName>
+              <EntityId>87699049104072934</EntityId>
+              <Min x="1" y="8" z="-3" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedPanelTipLight</SubtypeName>
+              <EntityId>130182774826376922</EntityId>
+              <Min x="2" y="8" z="-3" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedPanelTipLight</SubtypeName>
+              <EntityId>111038961705809103</EntityId>
+              <Min x="-2" y="8" z="-3" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedPanelTipLight</SubtypeName>
+              <EntityId>78368919744637089</EntityId>
+              <Min x="2" y="8" z="1" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedPanelTipLight</SubtypeName>
+              <EntityId>92560289582027867</EntityId>
+              <Min x="-2" y="8" z="1" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>75932891188504331</EntityId>
+              <Min x="-2" y="8" z="-2" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>85579690521735326</EntityId>
+              <Min x="2" y="8" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>95473628672150101</EntityId>
+              <Min x="-2" y="8" z="0" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>124414858000404871</EntityId>
+              <Min x="2" y="8" z="0" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>117827437850635947</EntityId>
+              <Min x="-2" y="8" z="-1" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>76466515111048795</EntityId>
+              <Min x="2" y="8" z="-1" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Plastic</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>91160969903239140</EntityId>
+              <Min x="2" y="9" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>6</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>85734275250823635</EntityId>
+              <Min x="-2" y="9" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>5</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>142705788530561142</EntityId>
+              <Min x="2" y="9" z="-2" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>8</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>111011958681931304</EntityId>
+              <Min x="-2" y="9" z="-2" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>7</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>111584535494497026</EntityId>
+              <Min x="-2" y="10" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>9</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>143592047308048234</EntityId>
+              <Min x="2" y="10" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>10</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>83447328999525062</EntityId>
+              <Min x="-2" y="10" z="-2" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>11</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Decoy">
+              <SubtypeName>SmallDecoy</SubtypeName>
+              <EntityId>76975502805744757</EntityId>
+              <Min x="2" y="10" z="-2" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Decoy</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>12</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>77115357365241879</EntityId>
+              <Min x="-3" y="9" z="0" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>109545031226749956</EntityId>
+              <Min x="3" y="9" z="0" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>141361929322252688</EntityId>
+              <Min x="-3" y="9" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>143462395170434410</EntityId>
+              <Min x="3" y="9" z="-2" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>126861280848179190</EntityId>
+              <Min x="3" y="10" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>91205906650197945</EntityId>
+              <Min x="-3" y="10" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>108669628377276471</EntityId>
+              <Min x="3" y="10" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>125610636454391698</EntityId>
+              <Min x="-3" y="10" z="0" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedPanelLight</SubtypeName>
+              <EntityId>97629462923524854</EntityId>
+              <Min x="2" y="10" z="-3" />
+              <BlockOrientation Forward="Right" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedPanelLight</SubtypeName>
+              <EntityId>90356669359601287</EntityId>
+              <Min x="-2" y="10" z="-3" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedPanelLight</SubtypeName>
+              <EntityId>107654700296797288</EntityId>
+              <Min x="2" y="10" z="1" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedPanelLight</SubtypeName>
+              <EntityId>114961447114101612</EntityId>
+              <Min x="-2" y="10" z="1" />
+              <BlockOrientation Forward="Left" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>129641062640449457</EntityId>
+              <Min x="-1" y="10" z="1" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>141306821670170822</EntityId>
+              <Min x="1" y="10" z="1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>141183523828300973</EntityId>
+              <Min x="-1" y="10" z="-3" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>74767613817014203</EntityId>
+              <Min x="1" y="10" z="-3" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="0.4" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>109830242046823837</EntityId>
+              <Min x="-1" y="10" z="2" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>77759085551958447</EntityId>
+              <Min x="1" y="10" z="2" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>129724231579371997</EntityId>
+              <Min x="-1" y="10" z="-4" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>116572763590983170</EntityId>
+              <Min x="1" y="10" z="-4" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>110624313012380518</EntityId>
+              <Min x="0" y="10" z="2" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>73188108636067829</EntityId>
+              <Min x="0" y="10" z="-4" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>115601085783661874</EntityId>
+              <Min x="-1" y="9" z="2" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>109759708301144065</EntityId>
+              <Min x="1" y="9" z="2" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>84465181556096154</EntityId>
+              <Min x="-1" y="9" z="-4" />
+              <BlockOrientation Forward="Down" Up="Left" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>137459661260493056</EntityId>
+              <Min x="1" y="9" z="-4" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>113268790692796537</EntityId>
+              <Min x="-3" y="8" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>115687403171012936</EntityId>
+              <Min x="3" y="8" z="-2" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLightInv</SubtypeName>
+              <EntityId>132976563902120081</EntityId>
+              <Min x="-3" y="8" z="0" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmor2x1SlopedSideBasePanelLight</SubtypeName>
+              <EntityId>137415112145629105</EntityId>
+              <Min x="3" y="8" z="0" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>84183626845975239</EntityId>
+              <Min x="-3" y="8" z="-1" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>127686378754332330</EntityId>
+              <Min x="3" y="8" z="-1" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0.575" y="-0.8" z="-0.23" />
+              <SkinSubtypeId>Weldless</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Warhead">
+              <SubtypeName>SmallWarhead</SubtypeName>
+              <EntityId>90929929418349064</EntityId>
+              <Min x="0" y="18" z="-1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Warhead</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>4</NumberInGrid>
+              <CountdownMs>10000</CountdownMs>
+              <IsArmed>false</IsArmed>
+              <IsCountingDown>false</IsCountingDown>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Warhead">
+              <SubtypeName>SmallWarhead</SubtypeName>
+              <EntityId>80534394850777887</EntityId>
+              <Min x="0" y="17" z="-1" />
+              <ColorMaskHSV x="0.575" y="-0.43" z="-0.1" />
+              <SkinSubtypeId>Neon_Colorable_Surface</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <CustomName>[Fenrir's Bite]Warhead</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <CountdownMs>10000</CountdownMs>
+              <IsArmed>false</IsArmed>
+              <IsCountingDown>false</IsCountingDown>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <XMirroxPlane x="0" y="9" z="0" />
+          <ZMirroxPlane x="1" y="9" z="-1" />
+          <ConveyorLines>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="7" z="-1" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="8" z="-1" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="15" z="-1" />
+              <StartDirection>Right</StartDirection>
+              <EndPosition x="1" y="16" z="-1" />
+              <EndDirection>Down</EndDirection>
+              <Sections>
+                <Section Direction="Right" Length="1" />
+                <Section Direction="Up" Length="1" />
+              </Sections>
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="15" z="-1" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="0" y="16" z="-2" />
+              <EndDirection>Down</EndDirection>
+              <Sections>
+                <Section Direction="Forward" Length="1" />
+                <Section Direction="Up" Length="1" />
+              </Sections>
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="15" z="-1" />
+              <StartDirection>Down</StartDirection>
+              <EndPosition x="0" y="14" z="-1" />
+              <EndDirection>Up</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="7" z="-2" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="8" z="-1" />
+              <EndDirection>Forward</EndDirection>
+              <Sections>
+                <Section Direction="Up" Length="1" />
+                <Section Direction="Backward" Length="1" />
+              </Sections>
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="12" z="-2" />
+              <StartDirection>Backward</StartDirection>
+              <EndPosition x="0" y="12" z="-1" />
+              <EndDirection>Forward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="9" z="-1" />
+              <StartDirection>Down</StartDirection>
+              <EndPosition x="0" y="8" z="-1" />
+              <EndDirection>Up</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="10" z="-1" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="11" z="-1" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="7" z="-1" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="8" z="-1" />
+              <EndDirection>Right</EndDirection>
+              <Sections>
+                <Section Direction="Up" Length="1" />
+                <Section Direction="Left" Length="1" />
+              </Sections>
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="13" z="-1" />
+              <StartDirection>Down</StartDirection>
+              <EndPosition x="0" y="12" z="-1" />
+              <EndDirection>Up</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="15" z="-1" />
+              <StartDirection>Left</StartDirection>
+              <EndPosition x="-1" y="16" z="-1" />
+              <EndDirection>Down</EndDirection>
+              <Sections>
+                <Section Direction="Left" Length="1" />
+                <Section Direction="Up" Length="1" />
+              </Sections>
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="-1" y="11" z="-1" />
+              <StartDirection>Right</StartDirection>
+              <EndPosition x="0" y="11" z="-1" />
+              <EndDirection>Left</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="11" z="-1" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="12" z="-1" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="11" z="-1" />
+              <StartDirection>Backward</StartDirection>
+              <EndPosition x="0" y="11" z="0" />
+              <EndDirection>Forward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="11" z="-1" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="0" y="11" z="-2" />
+              <EndDirection>Backward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="11" z="-1" />
+              <StartDirection>Right</StartDirection>
+              <EndPosition x="1" y="11" z="-1" />
+              <EndDirection>Left</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="-1" y="12" z="-1" />
+              <StartDirection>Right</StartDirection>
+              <EndPosition x="0" y="12" z="-1" />
+              <EndDirection>Left</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="-1" y="7" z="-1" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="0" y="8" z="-1" />
+              <EndDirection>Left</EndDirection>
+              <Sections>
+                <Section Direction="Up" Length="1" />
+                <Section Direction="Right" Length="1" />
+              </Sections>
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="12" z="-1" />
+              <StartDirection>Backward</StartDirection>
+              <EndPosition x="0" y="12" z="0" />
+              <EndDirection>Forward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="12" z="-1" />
+              <StartDirection>Right</StartDirection>
+              <EndPosition x="1" y="12" z="-1" />
+              <EndDirection>Left</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+          </ConveyorLines>
+          <BlockGroups>
+            <MyObjectBuilder_BlockGroup>
+              <Name>[Fenrir's Bite]Forward Thrusters</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>7</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>7</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>7</Y>
+                  <Z>-2</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+            <MyObjectBuilder_BlockGroup>
+              <Name>[Fenrir's Bite]Hydro Tanks</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>9</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>13</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+            <MyObjectBuilder_BlockGroup>
+              <Name>[Fenrir's Bite]Thrusters</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>16</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>16</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>16</Y>
+                  <Z>-2</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>12</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>11</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>11</Y>
+                  <Z>0</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>12</Y>
+                  <Z>0</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>11</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>12</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>11</Y>
+                  <Z>-2</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>12</Y>
+                  <Z>-2</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>1</X>
+                  <Y>7</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>-1</X>
+                  <Y>7</Y>
+                  <Z>-1</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>0</X>
+                  <Y>7</Y>
+                  <Z>-2</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+          </BlockGroups>
+          <DisplayName>Fenrir's Bite</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+      </CubeGrids>
+      <EnvironmentType>None</EnvironmentType>
+    </Prefab>
+  </Prefabs>
+</Definitions>
