@@ -1,8 +1,8 @@
-![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-08-blue?style=for-the-badge) ![Steam Downloads](https://img.shields.io/steam/downloads/3742391702?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%232a475e) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/substicious-gaming/VIX_HostileTakeover_EcoIntegration?style=for-the-badge&color=important)  ![License](https://img.shields.io/badge/License-GPL%20v3-green?style=for-the-badge) 
-
-
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/substicious-gaming/VIX_HostileTakeover_EcoIntegration?style=for-the-badge&color=important)  ![License](https://img.shields.io/badge/License-GPL%20v3-green?style=for-the-badge) 
 
 ![screenshot](Thumb.png)
+
+![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-08-blue?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) ![Steam Update Date](https://img.shields.io/steam/update-date/3742391702?style=for-the-badge&logo=steam&label=last%20updated&labelColor=%231b2838&color=%2366c0f4) ![Steam Downloads](https://img.shields.io/steam/downloads/3742391702?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) 
 
 # Volsung Industries: Hostile Takeover - Economy Integration
 
