@@ -1,4 +1,4 @@
-![License:](https://img.shields.io/badge/License%3A-GPL%20v3-green?style=for-the-badge) ![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-08-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License%3A-GPL%20v3-green?style=for-the-badge) ![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-08-blue?style=for-the-badge)
 
 ![screenshot](Thumb.png)
 
