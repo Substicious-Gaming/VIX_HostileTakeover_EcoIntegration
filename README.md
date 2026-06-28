@@ -36,6 +36,8 @@ Our premium fleet roster is now integrated directly into existing commercial Eco
  - Leviathan VI-X
  - Fenrir VI-X
  - Berserker VI-X
+ - Atlas Pod Carrier VI-X
+ - Leviathan VI-X Scout
 
 ### Extras:
 
