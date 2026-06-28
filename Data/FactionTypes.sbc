@@ -285,7 +285,7 @@
             <ItemId Type="MyObjectBuilder_Component" Subtype="EngineerPlushie" />
 
             <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="NATO_25x184mm" />
-            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="Missile200mm" />
+            <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="Missile200mm"/>
             <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="AutocannonClip" />
             <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="MediumCalibreAmmo" />
             <ItemId Type="MyObjectBuilder_AmmoMagazine" Subtype="LargeCalibreAmmo" />
@@ -377,6 +377,8 @@
             <PrefabName>Prefab_AV721_Vixen</PrefabName>
             <PrefabName>Prefab_Aerion_VI-X</PrefabName>
             <PrefabName>Prefab_Bastion_VI-X</PrefabName>
+            <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
+            <PrefabName>Prefab_Leviathan_VI-X_Scout</PrefabName>
         </GridsForSale>
 
         <CanSellOxygen>true</CanSellOxygen>
@@ -510,6 +512,8 @@
             <PrefabName>Prefab_AV721_Vixen</PrefabName>
             <PrefabName>Prefab_Aerion_VI-X</PrefabName>
             <PrefabName>Prefab_Bastion_VI-X</PrefabName>
+            <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
+            <PrefabName>Prefab_Leviathan_VI-X_Scout</PrefabName>
         </GridsForSale>
 
         <MaxContractCount>25</MaxContractCount>
@@ -686,6 +690,7 @@
             <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
         </OffersList>
 
+            <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
         <OrdersList>
             <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
             <ItemId Type="MyObjectBuilder_Component" Subtype="MetalGrid" />
@@ -744,6 +749,8 @@
             <PrefabName>Prefab_AV721_Vixen</PrefabName>
             <PrefabName>Prefab_Aerion_VI-X</PrefabName>
             <PrefabName>Prefab_Bastion_VI-X</PrefabName>
+            <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
+            <PrefabName>Prefab_Leviathan_VI-X_Scout</PrefabName>
 
 
         </GridsForSale>
