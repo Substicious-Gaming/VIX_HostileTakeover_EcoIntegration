@@ -43,7 +43,7 @@ Our premium fleet roster is now integrated directly into existing commercial Eco
  - Meridian VI-X
  - VI-CXL Supreme Cargo Transport
  - VI-HXL Heavy Salvage Lifter
- - VI-UXL Robost Utility Platform (*)
+ - VI-UXL Robost Utility Platform *(***)*
  - VI-UX Light Welder & Grinder
 
 
