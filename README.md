@@ -2,7 +2,7 @@
 
 ![screenshot](Thumb.png)
 
-![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-08-blue?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) ![Steam Update Date](https://img.shields.io/steam/update-date/3742391702?style=for-the-badge&logo=steam&label=last%20updated&labelColor=%231b2838&color=%2366c0f4) ![Steam Downloads](https://img.shields.io/steam/downloads/3742391702?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) 
+![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-10-blue?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) ![Steam Update Date](https://img.shields.io/steam/update-date/3742391702?style=for-the-badge&logo=steam&label=last%20updated&labelColor=%231b2838&color=%2366c0f4) ![Steam Downloads](https://img.shields.io/steam/downloads/3742391702?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) 
 
 # Volsung Industries: Hostile Takeover - Economy Integration
 
@@ -11,6 +11,8 @@ Our premium fleet roster is now integrated directly into existing commercial Eco
 > This mod adds to the vanilla trade stations, doesn't replace the vanilla sale items.
 > 
 > You can find these Vessels & Rovers in any of the Traders, Builders & Military Trade Stations.
+>
+> * Prefab is also added to Miner Trade Stations, along with the aforementioned station types.
 
 ### Rovers Added:
 
@@ -36,6 +38,13 @@ Our premium fleet roster is now integrated directly into existing commercial Eco
  - Leviathan VI-X
  - Fenrir VI-X
  - Berserker VI-X
+ - Atlas Pod Carrier VI-X
+ - Leviathan VI-X Scout
+ - Meridian VI-X
+ - VI-CXL Supreme Cargo Transport
+ - VI-HXL Heavy Salvage Lifter
+ - VI-UXL Robost Utility Platform (*)
+ - VI-UX Light Welder & Grinder
 
 ### Extras:
 

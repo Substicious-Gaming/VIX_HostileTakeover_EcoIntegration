@@ -198,6 +198,8 @@
             <PrefabName>Eco_Ship_B980Hauler</PrefabName>
             <PrefabName>Eco_Rover_OR7Gravler</PrefabName>
 
+            <PrefabName>Prefab_VI-CXL_Supreme_Cargo_Transport</PrefabName>
+
         </GridsForSale>
 
         <CanSellOxygen>true</CanSellOxygen>
@@ -379,6 +381,11 @@
             <PrefabName>Prefab_Bastion_VI-X</PrefabName>
             <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
             <PrefabName>Prefab_Leviathan_VI-X_Scout</PrefabName>
+            <PrefabName>Prefab_Meridian_VI-X</PrefabName>
+            <PrefabName>Prefab_VI-CXL_Supreme_Cargo_Transport</PrefabName>
+            <PrefabName>Prefab_VI-HXL_Heavy_Salvage_Lifter</PrefabName>
+            <PrefabName>Prefab_VI-UX_Light_Welder_Grinder</PrefabName>
+            <PrefabName>Prefab_VI-UXL_Robust_Utility_Platform</PrefabName>
         </GridsForSale>
 
         <CanSellOxygen>true</CanSellOxygen>
@@ -514,6 +521,11 @@
             <PrefabName>Prefab_Bastion_VI-X</PrefabName>
             <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
             <PrefabName>Prefab_Leviathan_VI-X_Scout</PrefabName>
+            <PrefabName>Prefab_Meridian_VI-X</PrefabName>
+            <PrefabName>Prefab_VI-CXL_Supreme_Cargo_Transport</PrefabName>
+            <PrefabName>Prefab_VI-HXL_Heavy_Salvage_Lifter</PrefabName>
+            <PrefabName>Prefab_VI-UX_Light_Welder_Grinder</PrefabName>
+            <PrefabName>Prefab_VI-UXL_Robust_Utility_Platform</PrefabName>
         </GridsForSale>
 
         <MaxContractCount>25</MaxContractCount>
@@ -752,6 +764,11 @@
             <PrefabName>Prefab_Atlas_Pod_Carrier_VI-X</PrefabName>
             <PrefabName>Prefab_Leviathan_VI-X_Scout</PrefabName>
 
+            <PrefabName>Prefab_Meridian_VI-X</PrefabName>
+            <PrefabName>Prefab_VI-CXL_Supreme_Cargo_Transport</PrefabName>
+            <PrefabName>Prefab_VI-HXL_Heavy_Salvage_Lifter</PrefabName>
+            <PrefabName>Prefab_VI-UX_Light_Welder_Grinder</PrefabName>
+            <PrefabName>Prefab_VI-UXL_Robust_Utility_Platform</PrefabName>
 
         </GridsForSale>
 
