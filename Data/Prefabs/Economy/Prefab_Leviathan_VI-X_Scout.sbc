@@ -6,7 +6,7 @@
         <DisplayName>Leviathan VI-X Scout</DisplayName>
         <Description>Companion to the Leviathan VI-X</Description>
         <Icon>Textures\GUI\Icons\VIX Prefabs\Leviathan_VI-X_Scout.dds</Icon>
-        <TooltipImage>Textures\GUI\Icons\VIX Prefabs\Leviathan_VI-X_Scout_Tooltip.dds</TooltipImage>
+        <TooltipImage>Textures\GUI\Icons\VIX Prefabs\Leviathan_VI-X_Scout_Tooltip.png</TooltipImage>
         <EnvironmentType>Space</EnvironmentType>
       <CubeGrids>
         <CubeGrid>

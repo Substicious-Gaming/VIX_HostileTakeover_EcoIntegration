@@ -6,7 +6,7 @@
         <DisplayName>Atlas Pod Carrier VI-X</DisplayName>
         <Description>The perfect companion for loading/unloading your Atlas VI-X</Description>
         <Icon>Textures\GUI\Icons\VIX Prefabs\AtlasPodCarrier_VI-X.dds</Icon>
-        <TooltipImage>Textures\GUI\Icons\VIX Prefabs\AtlasPodCarrier_Tooltip.dds</TooltipImage>
+        <TooltipImage>Textures\GUI\Icons\VIX Prefabs\AtlasPodCarrier_Tooltip.png</TooltipImage>
         <EnvironmentType>All</EnvironmentType>
       <CubeGrids>
         <CubeGrid>

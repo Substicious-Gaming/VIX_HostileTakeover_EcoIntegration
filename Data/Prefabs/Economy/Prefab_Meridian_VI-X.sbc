@@ -5,7 +5,7 @@
       <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="Prefab_Meridian_VI-X" />
         <DisplayName>Meridian VI-X</DisplayName>
         <Description>Developed as a heavy multi-role evolution of a classic design, the Meridian VI-X transforms a standard short-range logistics frame into a fully self-sufficient, long-range deep space explorer. Engineered to handle everything from high-G planetary descents to unexpected close-range sector skirmishes, it is the perfect general-purpose grid for any engineer charting unknown territory.</Description>
-        <Icon>Textures\GUI\Icons\VIX Prefabs\Meridan_VI-X.dds</Icon>
+        <Icon>Textures\GUI\Icons\VIX Prefabs\Meridian_VI-X.dds</Icon>
         <TooltipImage>Textures\GUI\Icons\VIX Prefabs\Meridian_VI-X_Tooltip.png</TooltipImage>
         <EnvironmentType>All</EnvironmentType>
       <CubeGrids>
