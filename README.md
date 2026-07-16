@@ -2,7 +2,7 @@
 
 ![screenshot](Thumb.png)
 
-![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-11-blue?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) ![Steam Update Date](https://img.shields.io/steam/update-date/3742391702?style=for-the-badge&logo=steam&label=last%20updated&labelColor=%231b2838&color=%2366c0f4) ![Steam Downloads](https://img.shields.io/steam/downloads/3742391702?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) 
+![Workshop Revision](https://img.shields.io/badge/Workshop%20Revision-12-blue?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) ![Steam Update Date](https://img.shields.io/steam/update-date/3742391702?style=for-the-badge&logo=steam&label=last%20updated&labelColor=%231b2838&color=%2366c0f4) ![Steam Downloads](https://img.shields.io/steam/downloads/3742391702?style=for-the-badge&logo=steam&labelColor=%231b2838&color=%20%2366c0f4) 
 
 # Volsung Industries: Hostile Takeover - Economy Integration
 
